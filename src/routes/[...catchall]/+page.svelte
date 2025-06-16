@@ -1,24 +1,26 @@
-<script>
-  import { isPreviewing, Content } from "@builder.io/sdk-svelte";
-  import { PUBLIC_BUILDER_IO_KEY } from '$env/static/public'
-  import { builder } from '@builder.io/sdk'
+<script lang="ts">
+	import { isPreviewing, Content } from '@builder.io/sdk-svelte';
+	import { PUBLIC_BUILDER_IO_KEY } from '$env/static/public';
+	import type { PageProps } from './$types';
+	import Button from '$lib/components/Button.svelte';
 
-  const model = 'page';
+	let { data }: PageProps = $props();
+	const model = 'page';
 
-  export let data;
+	const canShowContent = data.content || isPreviewing();
 
-  const canShowContent = data.content || isPreviewing();
+	console.log(data);
 </script>
 
 <main>
-  {#if canShowContent}
-    <div>page Title: {data.content?.data?.title || "Unpublished"}</div>
-    <Content
-      model={model}
-      content={data.content}
-      apiKey={PUBLIC_BUILDER_IO_KEY} 
-    />
-  {:else}
-    Content Not Found
-  {/if}
+	<div>
+		<Button>jjjj</Button>
+		<Button>Appartement</Button>
+	</div>
+	{#if canShowContent}
+		<div>page Title: {data.content?.data?.title || 'Unpublished'}</div>
+		<Content {model} content={data.content} apiKey={PUBLIC_BUILDER_IO_KEY} />
+	{:else}
+		Content Not Found
+	{/if}
 </main>
