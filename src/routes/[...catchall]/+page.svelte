@@ -4,12 +4,8 @@
 	import type { PageProps } from './$types';
 	import Button from '$lib/components/button.svelte';
 
-	let { data }: PageProps = $props();
-	const model = 'page';
-
-	const canShowContent = data.content || isPreviewing();
-
-	console.log(data);
+  let { data }: PageProps = $props();
+  const canShowContent = data.content || isPreviewing();
 </script>
 
 <main>
