@@ -14,6 +14,9 @@ importers:
       '@builder.io/sdk-svelte':
         specifier: ^4.2.1
         version: 4.2.1(svelte@5.34.3)
+      '@lucide/svelte':
+        specifier: ^0.517.0
+        version: 0.517.0(svelte@5.34.3)
       '@tailwindcss/vite':
         specifier: ^4.1.10
         version: 4.1.10(vite@6.3.5(jiti@2.4.2)(lightningcss@1.30.1))
@@ -48,6 +51,9 @@ importers:
       globals:
         specifier: ^16.0.0
         version: 16.2.0
+      phosphor-icons-svelte:
+        specifier: 1.1.2
+        version: 1.1.2(svelte@5.34.3)
       prettier:
         specifier: ^3.4.2
         version: 3.5.3
@@ -326,6 +332,11 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@lucide/svelte@0.517.0':
+    resolution: {integrity: sha512-abTsvzeGxCAZY2HnFO8XOYlZDaWtBmg9R4C/sioAlhkxfRRn3oaCvxIYH5/KcBnWsvxXtWW17+snejkKCh0O+g==}
+    peerDependencies:
+      svelte: ^5
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1190,6 +1201,11 @@ packages:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
     engines: {node: '>=8'}
 
+  phosphor-icons-svelte@1.1.2:
+    resolution: {integrity: sha512-Kigc5CID5OhSO24QHhen6i1ZUWZdD0qSK0wXFL4vlv22leh3pmf8HYT9QUXjVC4esklyV6rhk6BXtWY5RAr3aQ==}
+    peerDependencies:
+      svelte: ^4.0.0 || ^5.0.0
+
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -1692,6 +1708,10 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  '@lucide/svelte@0.517.0(svelte@5.34.3)':
+    dependencies:
+      svelte: 5.34.3
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -2494,6 +2514,10 @@ snapshots:
   path-exists@4.0.0: {}
 
   path-key@3.1.1: {}
+
+  phosphor-icons-svelte@1.1.2(svelte@5.34.3):
+    dependencies:
+      svelte: 5.34.3
 
   picocolors@1.1.1: {}
 
