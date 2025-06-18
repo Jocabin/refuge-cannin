@@ -3,4 +3,3 @@
 </script>
 
 <p>{text}</p>
-<img src={img} alt="" />

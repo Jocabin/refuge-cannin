@@ -39,7 +39,7 @@
 					<a href="/projets" class="pb-4 border-b-2 border-opacity-20">Nous soutenir</a>
 					<a href="/cv" class="pb-4 border-b-2 border-opacity-20 font-bold">Le refuge</a>
 					<a href="/contact" class="pb-4 border-b-2 border-opacity-20">Les chiens</a>
-					<a href="/contact" class="hover:underline">Bénévolat</a>
+					<a href="/contact" class="">Bénévolat</a>
 				</li>
 			</ul>
 		</div>

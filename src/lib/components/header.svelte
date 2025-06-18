@@ -19,15 +19,23 @@
 			>
 			<a
 				class="flex items-center bg-transparent px-4 rounded-4xl hover:bg-accents focus:bg-accents"
-				href="/">LES CHIENS</a
+				href="/">ADOPTER</a
 			>
 			<a
 				class="flex items-center bg-transparent px-4 rounded-4xl hover:bg-accents focus:bg-accents"
-				href="/">BÉNÉVOLAT</a
+				href="/">SOUVENIR</a
 			>
 			<a
 				class="flex items-center bg-transparent px-4 rounded-4xl hover:bg-accents focus:bg-accents"
 				href="/">RESSOURCES</a
+			>
+			<a
+				class="flex items-center bg-transparent px-4 rounded-4xl hover:bg-accents focus:bg-accents"
+				href="/">BOUTIQUE</a
+			>
+			<a
+				class="flex items-center bg-transparent px-4 rounded-4xl hover:bg-accents focus:bg-accents"
+				href="/">BLOG</a
 			>
 		</li>
 	</ul>
