@@ -16,7 +16,7 @@
 	class="isolate flex flex-row justify-between items-center gap-4"
 	style={img && isImagebackground ? `background-image: url('${img}');` : ''}
 	class:imageBackground={img && isImagebackground}
-	class:mix-blend-multiply={isImageTexture}
+	class:bg-blend-multiply={isImageTexture}
 >
 	<div class="" class:order-2={reverseOrder}>
 		{#if title}
