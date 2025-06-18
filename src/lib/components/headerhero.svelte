@@ -4,7 +4,9 @@
 	import HeartBone from '../assets/heart-bone.png';
 </script>
 
-<div class="div bg-secondary rounded-3xl h-screen overflow-hidden mx-auto flex items-end relative">
+<div
+	class="div bg-secondary rounded-3xl h-[850px] overflow-hidden mx-auto flex items-end relative md:h-screen"
+>
 	<svg
 		class="mix-blend-overlay absolute inset-0 md:w-full md:h-full"
 		xmlns="http://www.w3.org/2000/svg"
@@ -90,17 +92,13 @@
 				>
 					Une truffe. <br />Deux cœurs. <br />Une vie transformée.
 				</h3>
-				<p class="font-just text-4xl text-title-pink">
-					Adopter, ce n’est pas choisir au hasard.
-					<br /> C’est créer un lien, un vrai.
-				</p>
 				<button
 					class="bg-third py-[16px] px-[32px] rounded-4xl font-dm transition-all duration-300 hover:bg-transparent hover:border-2 hover:border-third"
 					>Voir les chiens à l’adoption</button
 				>
 			</div>
 			<img
-				class="absolute bottom-10 right-0 z-20 w-[130px] h-auto md:w-[250px]"
+				class="absolute bottom-34 right-0 z-100 w-[130px] h-auto md:w-[250px]"
 				src={Sitckers2}
 				alt=""
 			/>
