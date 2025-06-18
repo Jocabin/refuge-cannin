@@ -1,12 +1,20 @@
-import { fetchEntries } from '@builder.io/sdk-svelte';
+import { fetchEntries, fetchOneEntry, getBuilderSearchParams } from '@builder.io/sdk-svelte';
 import { PUBLIC_BUILDER_IO_KEY } from '$env/static/public';
 
-export async function load() {
-  const pages = await fetchEntries({
-    model: 'chien',
-    apiKey: PUBLIC_BUILDER_IO_KEY
+export async function load(event) {
+  const content = await fetchOneEntry({
+    model: 'page',
+    apiKey: PUBLIC_BUILDER_IO_KEY,
+    options: getBuilderSearchParams(event.url.searchParams),
+    userAttributes: {
+      urlPath: event.url.pathname || '/',
+    },
   });
-  return { pages };
+
+  const dogs = fetchEntries({
+        model: 'chien',
+        apiKey: PUBLIC_BUILDER_IO_KEY
+  })
+  
+  return { content, dogs };
 }
-
-
