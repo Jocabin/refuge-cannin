@@ -36,7 +36,7 @@
 		href="/"
 	>
 		<p class="hidden md:flex">NOUS SOUTENIR</p>
-		<!-- Mobile menu button-->
-		<ModaleBurger />
 	</a>
+	<!-- Mobile menu button-->
+	<ModaleBurger />
 </header>
