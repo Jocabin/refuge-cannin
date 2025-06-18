@@ -1,5 +1,8 @@
 import Text from "$lib/components/Text.svelte";
 import TextImageBlock from "$lib/components/TextImageBlock.svelte";
+import ThreeRowsGrid from "$lib/components/ThreeRowsGrid.svelte";
+import Faq from "$lib/components/FAQ.svelte";
+import ImagePatch from "./components/ImagePatch.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -67,6 +70,79 @@ export const CUSTOM_COMPONENTS = [
                                 type: 'string',
                                 defaultValue: 'Lorem ipsum',
                         },
+                ]
+        },
+        {
+                component: ThreeRowsGrid,
+                name: 'Grille 3 colonnes',
+                inputs: [
+                        {
+                                name: 'rows',
+                                type: 'list',
+                                subFields: [
+                                        {
+                                                name: 'text',
+                                                type: 'string',
+                                                defaultValue: 'lorem ipsum'
+                                        },
+                                        {
+                                                name: 'img',
+                                                type: 'file'
+                                        },
+                                        {
+                                                name: 'imgAlt',
+                                                type: 'string',
+                                                defaultValue: 'Description alternative de l\'image',
+                                        },
+                                        {
+                                                name: 'ctaText',
+                                                type: 'string',
+                                                defaultValue: 'Cliquez ici'
+                                        },
+                                        {
+                                                name: 'ctaLink',
+                                                type: 'string',
+                                                defaultValue: '/'
+                                        },
+                                ]
+                        }
+                ]
+        },
+        {
+                component: Faq,
+                name: 'FAQ',
+                inputs: [
+                        {
+                                name: 'questions',
+                                type: 'list',
+                                subFields: [
+                                        {
+                                                name: 'title',
+                                                type: 'string',
+                                                defaultValue: 'titre question'
+                                        },
+                                        {
+                                                name: 'text',
+                                                type: 'string',
+                                                defaultValue: 'texte question'
+                                        }
+                                ]
+                        }
+                ]
+        },
+        {
+                component: ImagePatch,
+                name: 'Image PatchWork',
+                inputs: [
+                        {
+                                name: 'img',
+                                type: 'file',
+                        },
+                        {
+                                name: 'imgAlt',
+                                type: 'string',
+                                defaultValue: 'Description alternative de l\'image',
+                        }
                 ]
         }
 ]
