@@ -1,8 +1,23 @@
 <script>
-	let { title, text, img, imgAlt, reverseOrder, ctaText, ctaLink } = $props();
+	let {
+		title,
+		text,
+		img,
+		imgAlt,
+		isImagebackground,
+		isImageTexture,
+		reverseOrder,
+		ctaText,
+		ctaLink
+	} = $props();
 </script>
 
-<section class="flex flex-row justify-between items-center gap-4">
+<section
+	class="isolate flex flex-row justify-between items-center gap-4"
+	style={img && isImagebackground ? `background-image: url('${img}');` : ''}
+	class:imageBackground={img && isImagebackground}
+	class:mix-blend-multiply={isImageTexture}
+>
 	<div class="" class:order-2={reverseOrder}>
 		{#if title}
 			<h2>{title}</h2>
@@ -17,7 +32,15 @@
 		{/if}
 	</div>
 
-	{#if img}
+	{#if img && !isImagebackground}
 		<img width="600" src={img} alt={imgAlt} class:order-1={reverseOrder} />
 	{/if}
 </section>
+
+<style>
+	.imageBackground {
+		object-fit: cover;
+		background-repeat: no-repeat;
+		background-size: auto;
+	}
+</style>

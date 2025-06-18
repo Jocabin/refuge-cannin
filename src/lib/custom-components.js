@@ -25,6 +25,16 @@ export const CUSTOM_COMPONENTS = [
           defaultValue: 'Description alternative de l\'image',
         },
         {
+          name: 'isImagebackground',
+          type: 'boolean',
+          defaultValue: false,
+        },
+        {
+          name: 'isImageTexture',
+          type: 'boolean',
+          defaultValue: false,
+        },
+        {
           name: 'reverseOrder',
           type: 'boolean',
           defaultValue: false,
