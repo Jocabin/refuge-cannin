@@ -27,6 +27,9 @@
     --color-background-2: #F3F3F3;
     --color-opacity: #010344;
     --color-title-blue: #010344;
+    --color-title-red:#4B1F18;
+    --color-title-pink: #340735;
+    --color-titlt-green:#0A2E22;
 
     /* Text */
 
@@ -37,4 +40,11 @@
     --text-h5: 1.125rem;
     --text-h6: 1rem;
     --text-p: 0.875rem;
+}
+
+body {
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }

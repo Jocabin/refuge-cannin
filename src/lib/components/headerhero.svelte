@@ -3,9 +3,9 @@
 	import Sitckers2 from '../assets/Stickers-2.png';
 </script>
 
-<div class="div bg-secondary">
+<div class="div bg-secondary rounded-3xl h-screen overflow-hidden mx-auto flex items-end relative">
 	<svg
-		class="mix-blend-overlay"
+		class="mix-blend-overlay w-full h-full absolute inset-0"
 		xmlns="http://www.w3.org/2000/svg"
 		width="1395"
 		height="800"
@@ -69,11 +69,13 @@
 			</radialGradient>
 		</defs>
 	</svg>
-	<img src={Sitckers1} alt="" />
-	<div>
-		<img src={Sitckers2} alt="" />
-		<h3 class="font-sink text-title-blue text-[137px] leading-[104px] uppercase">
-			Une truffe. <br />Deux cœurs. <br />Une vie transformée.
-		</h3>
+	<div class="overflow-hidden w-screen py-10 px-10 relative z-50">
+		<img src={Sitckers1} alt="" />
+		<div class="flex overflow-hidden justify-between">
+			<h3 class="font-sink text-title-pink text-[137px] leading-[110px] uppercase">
+				Une truffe. <br />Deux cœurs. <br />Une vie transformée.
+			</h3>
+			<img class="absolute right-0 z-20" src={Sitckers2} alt="" />
+		</div>
 	</div>
 </div>
