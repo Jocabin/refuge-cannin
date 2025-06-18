@@ -1,7 +1,10 @@
 <script>
+	import Footer from '$lib/components/footer.svelte';
+	import Header from '$lib/components/header.svelte';
 	import '../app.css';
 	const { children } = $props();
 </script>
 
-<h1>titre depuis le layout</h1>
+<Header />
 {@render children()}
+<Footer />

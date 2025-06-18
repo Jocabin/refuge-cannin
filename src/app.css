@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Sink';
+    src:
+      url('/fonts/Sink.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@theme {
+
+    /* Fonts */
+
+    --font-just: 'Just Me Again Down Here', cursive;
+    --font-dm: 'DM Sans', sans-serif;
+    --font-sink: 'Sink', sans-serif;
+
+    /* Colors  */
+
+    --color-primary: #38C295;
+    --color-secondary: #FBD7FC;
+    --color-third: #F6735D;
+    --color-accents: #7F82DD;
+    --color-text: #18170D;
+    --color-background-1: #FFFDFA;
+    --color-background-2: #F3F3F3;
+
+    /* Text */
+
+    --text-h1: 2.25rem;
+    --text-h2: 1.875rem;
+    --text-h3: 1.5rem;
+    --text-h4: 1.25rem;
+    --text-h5: 1.125rem;
+    --text-h6: 1rem;
+    --text-p: 0.875rem;
+}
