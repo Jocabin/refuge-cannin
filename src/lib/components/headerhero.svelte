@@ -95,7 +95,7 @@
 					<br /> C’est créer un lien, un vrai.
 				</p>
 				<button
-					class="bg-third py-[16px] px-[32px] rounded-4xl font-dm transition-all duration-300 hover:bg-transparent hover:border-2 hover:border-third"
+					class="bg-third border-2 border-third py-[16px] px-[32px] rounded-4xl font-dm transition-all duration-300 hover:bg-transparent hover:border-2 hover:border-third"
 					>Voir les chiens à l’adoption</button
 				>
 			</div>
