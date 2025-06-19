@@ -12,29 +12,19 @@
 >
 	{#if isOpen}
 		<a
-<<<<<<< HEAD
-			class="absolute font-dm font-bold shadow-2xl flex text-xs items-center gap-4 bg-background-1 py-4 px-8 rounded-4xl"
-=======
 			class="font-dm font-bold flex text-xs items-center gap-4 bg-background-1 py-4 px-8 rounded-4xl"
->>>>>>> f25ff63 (header2.0)
 			href="/"
 		>
 			<X class="w-15 h-15 text-black text-xl" />
 			<p class="text-h5">Fermer</p>
 		</a>
 	{:else}
-<<<<<<< HEAD
-		<a class="font-dm flex text-xs items-center gap-4 py-4 px-8 rounded-4xl z-50" href="/">
-			<Bone class="w-15 h-15 text-black text-xl" />
-			<p class="text-h5">MENU</p>
-=======
 		<a
 			class="font-dm flex text-xs items-center gap-4 py-4 px-8 bg-background-1 rounded-4xl"
 			href="/"
 		>
 			<List class="w-15 h-15 text-black text-xl" />
 			<p class="text-h5">Menu</p>
->>>>>>> f25ff63 (header2.0)
 		</a>
 	{/if}
 </button>

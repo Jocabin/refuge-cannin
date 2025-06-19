@@ -1,14 +1,8 @@
 <script>
 	import Picture3 from '$lib/assets/picture-3.png';
-<<<<<<< HEAD
 	import Button from './Button.svelte';
 </script>
 
-=======
-</script>
-
-gi
->>>>>>> f25ff63 (header2.0)
 <div class="flex w-screen py-[12px] px-[16px]">
 	<div
 		class="bg-secondary rounded-3xl h-[456px] overflow-hidden mx-auto flex items-end relative w-full"
