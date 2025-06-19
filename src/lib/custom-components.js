@@ -6,6 +6,7 @@ import ImagePatch from "./components/ImagePatch.svelte";
 import DogsGrid from "./components/DogsGrid.svelte";
 import AdoptionSeul from "./components/AdoptionSeul.svelte";
 import CardSlider from "./components/CardSlider.svelte";
+import SlideElements from "./components/slideElements.svelte";
 import Vedettes from "./components/Vedettes.svelte";
 import Headerhero from "./components/headerhero.svelte";
 import Button from "./components/button.svelte";
@@ -88,32 +89,27 @@ export const CUSTOM_COMPONENTS = [
                 name: 'Grille 3 colonnes',
                 inputs: [
                         {
+                                name: 'title',
+                                type: 'string'
+                        },
+                        {
                                 name: 'rows',
                                 type: 'list',
                                 subFields: [
+
+                                        {
+                                                name: 'title',
+                                                type: 'string',
+                                                defaultValue: 'Titre',
+                                        },
                                         {
                                                 name: 'text',
                                                 type: 'string',
                                                 defaultValue: 'lorem ipsum'
                                         },
                                         {
-                                                name: 'img',
-                                                type: 'file'
-                                        },
-                                        {
-                                                name: 'imgAlt',
-                                                type: 'string',
-                                                defaultValue: 'Description alternative de l\'image',
-                                        },
-                                        {
-                                                name: 'ctaText',
-                                                type: 'string',
-                                                defaultValue: 'Cliquez ici'
-                                        },
-                                        {
-                                                name: 'ctaLink',
-                                                type: 'string',
-                                                defaultValue: '/'
+                                                name: 'color',
+                                                type: 'color'
                                         },
                                 ]
                         }
@@ -221,6 +217,16 @@ export const CUSTOM_COMPONENTS = [
         {
                 component: Vedettes,
                 name: 'Vedettes',
+        },
+        {
+                component: SlideElements,
+                name: 'Slider de text automatique',
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string',
+                        },
+                ]
         },
         {
                 component: Headerhero,

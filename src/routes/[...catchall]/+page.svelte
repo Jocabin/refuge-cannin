@@ -3,7 +3,7 @@
 	import { PUBLIC_BUILDER_IO_KEY } from '$env/static/public';
 	import { CUSTOM_COMPONENTS } from '$lib/custom-components.js';
 	import Headerhero from '$lib/components/headerhero.svelte';
-	import SlideElements from '$lib/components/slideElements.svelte';
+	import SlideElements from '$lib/components/SlideElements.svelte';
 	import Adopter from '$lib/components/adopter.svelte';
 	import PictureDogBoy from '$lib/assets/picture-dog-and-boy.png';
 	import PictureDogWomen from '$lib/assets/picture-dog-and-women.png';
