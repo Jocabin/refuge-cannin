@@ -12,7 +12,7 @@ import Vedettes from "./components/Vedettes.svelte";
 import Headerhero from "./components/headerhero.svelte";
 import Button from "./components/button.svelte";
 import SearchBar from "./components/SearchBar.svelte";
-import SlideElements from "./components/SlideElements.svelte";
+import PinkSlider from "./components/PinkSlider.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -221,7 +221,7 @@ export const CUSTOM_COMPONENTS = [
                 name: 'Vedettes',
         },
         {
-                component: SlideElements,
+                component: PinkSlider,
                 name: 'Slider de text automatique',
                 inputs: [
                         {
