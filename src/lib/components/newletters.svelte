@@ -1,5 +1,6 @@
 <script>
 	import Picture3 from '$lib/assets/picture-3.png';
+	import Button from './Button.svelte';
 </script>
 
 <div class="flex w-screen py-[12px] px-[16px]">
@@ -49,9 +50,7 @@
 						placeholder="Votre adresse e–mail"
 						class="rounded-full px-4 py-2 w-[600px] border bg-background-1 border-black"
 					/>
-					<button class="bg-title-pink text-white px-6 py-2 rounded-full font-light"
-						>Je m’abonne</button
-					>
+					<Button>Je m’abonne</Button>
 				</div>
 				<label class="flex items-center gap-2 text-sm underline">
 					<input type="checkbox" />
