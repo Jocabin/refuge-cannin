@@ -124,7 +124,7 @@
 					placeholder="Votre email"
 					class="p-4 px-5 border-text border-2 rounded-full bg-white flex-1"
 				/>
-				<Button>Je m'abonne</Button>
+				<Button text="Je m'abonne" color="#7F82DD" textColor="#010344" />
 			</form>
 
 			<label class="flex items-center gap-2 text-sm underline">

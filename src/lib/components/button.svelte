@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { onclick = null, color, text, textColor, link } = $props();
+	let { onclick = null, color, text, textColor, link = null } = $props();
 </script>
 
 {#if link}
