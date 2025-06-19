@@ -1,6 +1,7 @@
 <script lang="ts">
-	let { text, img } = $props();
+	let { children } = $props();
 </script>
 
-<p>{text}</p>
-<img src={img} alt="" />
+<button class="bg-text rounded-full text-white px-10 py-6 font-semibold font-dm">
+	{@render children()}
+</button>

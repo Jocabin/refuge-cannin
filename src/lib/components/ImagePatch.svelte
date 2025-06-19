@@ -2,8 +2,8 @@
 	let { img, imgAlt } = $props();
 </script>
 
-<div class="clipped-image rotate-180 bg-red-400 flex justify-center items-center w-fit p-10">
-	<img width="500" src={img} alt={imgAlt} class="clipped-image -rotate-180" />
+<div class="clipped-image rotate-180 bg-white flex justify-center items-center p-10 w-full h-full">
+	<img src={img} alt={imgAlt} class="clipped-image -rotate-180" />
 </div>
 
 <style>
