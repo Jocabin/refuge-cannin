@@ -6,8 +6,8 @@ import ImagePatch from "./components/ImagePatch.svelte";
 import DogsGrid from "./components/DogsGrid.svelte";
 import AdoptionSeul from "./components/AdoptionSeul.svelte";
 import CardSlider from "./components/CardSlider.svelte";
-import SlideElements from "./components/slideElements.svelte";
-
+import SlideElements from "./components/SlideElements.svelte";
+import Adopter from "./components/adopter.svelte";
 export const CUSTOM_COMPONENTS = [
         {
                 component: TextImageBlock,
@@ -216,6 +216,48 @@ export const CUSTOM_COMPONENTS = [
                 inputs: [
                         {
                                 name: 'title',
+                                type: 'string',
+                        },
+                ]
+        },
+        {
+                component: Adopter,
+                name: 'Adopter un chien',
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string',
+                        },
+                        {
+                                name: 'text',
+                                type: 'string',
+                        },
+                        {
+                                name: 'color',
+                                type: 'color',
+                        },
+                        {
+                                name: 'img',
+                                type: 'file',
+                        },
+                        {
+                                name: 'ctaText',
+                                type: 'string',
+                        },
+                        {
+                                name: 'ctaLink',
+                                type: 'string',
+                        },
+                        {
+                                name: 'woff1',
+                                type: 'string',
+                        },
+                        {
+                                name: 'woff2',
+                                type: 'string',
+                        },
+                        {
+                                name: 'textList',
                                 type: 'string',
                         },
                 ]
