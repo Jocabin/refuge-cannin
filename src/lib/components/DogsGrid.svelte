@@ -4,17 +4,40 @@
 	import { fetchEntries } from '@builder.io/sdk-svelte';
 	import { PUBLIC_BUILDER_IO_KEY } from '$env/static/public';
 	import Button from './Button.svelte';
+	import { page } from '$app/state';
+	import CardList from './CardList.svelte';
+	import { environment, lifestyle, entourage } from '$lib/select-datas';
+
+	// ?env=campagne&quotidien=work&entourage=familia
 
 	/**
 	 * @type {string | any[]}
 	 */
 	let dogs = $state([]);
-	let results = $derived(dogs);
+	let envSearch = $state(page.url.searchParams.get('env') ?? '');
+	let lifestyleSearch = $state(page.url.searchParams.get('quotidien') ?? '');
+	let entourageSearch = $state(page.url.searchParams.get('entourage') ?? '');
 
-	let envSearch = $state('');
-	let lifestyleSearch = $state('');
-	let entourageSearch = $state('');
-	let searchEnabled = $derived(envSearch != '' || lifestyleSearch != '' || entourageSearch != '');
+	function getOptionvalue(text, arr) {
+		return arr.find((el) => el.value === text)?.text ?? '';
+	}
+
+	function filterDogs() {
+		return dogs.filter((dog) => {
+			const r = dog.data;
+
+			const matchesEnv =
+				r.environement == getOptionvalue(envSearch, environment) || envSearch === '';
+			const matchesLifestyle =
+				r.quotidien == getOptionvalue(lifestyleSearch, lifestyle) || lifestyleSearch === '';
+			const matchesEntourage =
+				r.entourage == getOptionvalue(entourageSearch, entourage) || entourageSearch === '';
+
+			return matchesEnv && matchesLifestyle && matchesEntourage;
+		});
+	}
+
+	let results = $state([]);
 
 	$effect(() => {
 		fetchEntries({
@@ -22,6 +45,7 @@
 			apiKey: PUBLIC_BUILDER_IO_KEY
 		}).then((data) => {
 			dogs = data;
+			results = filterDogs();
 		});
 	});
 </script>
@@ -36,9 +60,9 @@
 			id=""
 			bind:value={envSearch}
 		>
-			<option value="" selected>Ton environnement</option>
-			<option value="house" selected>Maison</option>
-			<option value="appart" selected>Appartement</option>
+			{#each environment as o}
+				<option value={o.value}>{o.text}</option>
+			{/each}
 		</select>
 
 		<select
@@ -47,7 +71,9 @@
 			id=""
 			bind:value={lifestyleSearch}
 		>
-			<option value="" selected>Ton quotidien</option>
+			{#each lifestyle as o}
+				<option value={o.value}>{o.text}</option>
+			{/each}
 		</select>
 
 		<select
@@ -56,53 +82,19 @@
 			id=""
 			bind:value={entourageSearch}
 		>
-			<option value="" selected>Ton entourage</option>
+			{#each entourage as o}
+				<option value={o.value}>{o.text}</option>
+			{/each}
 		</select>
 
-		<Button>Rechercher</Button>
+		<Button
+			onclick={() => {
+				results = filterDogs();
+			}}
+		>
+			Rechercher
+		</Button>
 	</nav>
 
-	<div>
-		<p class="mb-4">{results.length} résultats</p>
-
-		<section class="dogGrid">
-			{#each results as result, i}
-				{@const r = result.data}
-
-				{#if !searchEnabled}
-					<article
-						class="bg-white w-full rounded-lg overflow-hidden flex flex-col"
-						class:firstOne={i == 0}
-					>
-						<div class="flex-1 w-full bg-red-50 overflow-hidden">
-							<img src={r.gallery[0].img} alt="" class="flex-1 w-full object-cover h-full" />
-						</div>
-						<div class="font-dm p-4">
-							<h2 class="font-bold text-3xl">{r.name}</h2>
-							<p>En attente de sa famille idéale</p>
-							<p>{r.sex}</p>
-							<p>
-								{new Date(r.birthdate).toLocaleDateString()} ({Math.floor(
-									(new Date() - new Date(r.birthdate)) / (1000 * 60 * 60 * 24 * 365)
-								)} ans)
-							</p>
-						</div>
-					</article>
-				{/if}
-			{/each}
-		</section>
-	</div>
+	<CardList {results} />
 </section>
-
-<style>
-	.dogGrid {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
-		grid-template-rows: repeat(auto-fill, 350px);
-	}
-
-	.firstOne {
-		grid-row: 1 / 3;
-	}
-</style>
