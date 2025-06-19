@@ -55,9 +55,6 @@
 				href="/">Signalement</a
 			>
 		</li>
-		<li>
-			<DropDown />
-		</li>
 	</ul>
 	<ul>
 		<li

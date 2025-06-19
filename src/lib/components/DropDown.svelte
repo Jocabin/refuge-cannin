@@ -3,13 +3,13 @@
 	let { text } = $props();
 </script>
 
-<div
-	class=" bg-background-1 h-auto w-auto divide-y-4 divide-y-reverse divide-[rgba(1, 3, 68, 0.05)"
->
+<div class="bg-background-1 w-auto divide-y divide-[rgba(1,3,68,0.05)]">
 	{#if text}
-		<div class="group flex w-full">
-			<p class="font-dm text-[16px] text-bold">{text}</p>
-			<ArrowRight class="hidden transition all duration-300 group:hover:block" />
+		<div class="group flex w-full items-center justify-between py-2 px-4 cursor-pointer">
+			<p class="font-dm text-[16px] font-bold">{text}</p>
+			<ArrowRight
+				class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-4 h-4"
+			/>
 		</div>
 	{/if}
 </div>
