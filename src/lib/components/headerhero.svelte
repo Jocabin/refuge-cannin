@@ -1,11 +1,14 @@
 <script>
 	import Sitckers1 from '../assets/Stickers-1.png';
 	import Sitckers2 from '../assets/Stickers-2.png';
+	import HeartBone from '../assets/heart-bone.png';
 </script>
 
-<div class="div bg-secondary rounded-3xl h-screen overflow-hidden mx-auto flex items-end relative">
+<div
+	class="div bg-secondary rounded-3xl h-[850px] overflow-hidden mx-auto flex items-end relative md:h-screen"
+>
 	<svg
-		class="mix-blend-overlay w-full h-full absolute inset-0"
+		class="mix-blend-overlay absolute inset-0 md:w-full md:h-full"
 		xmlns="http://www.w3.org/2000/svg"
 		width="1395"
 		height="800"
@@ -69,13 +72,36 @@
 			</radialGradient>
 		</defs>
 	</svg>
-	<div class="overflow-hidden w-screen py-10 px-10 relative z-50">
-		<img src={Sitckers1} alt="" />
-		<div class="flex overflow-hidden justify-between">
-			<h3 class="font-sink text-title-pink text-[137px] leading-[110px] uppercase">
-				Une truffe. <br />Deux cœurs. <br />Une vie transformée.
-			</h3>
-			<img class="absolute right-0 z-20" src={Sitckers2} alt="" />
+	<div class="w-screen py-4 px-4 relative md:py-10 md:px-10">
+		<div class="flex justify-between">
+			<img
+				class="absolute bottom-150 right-0 z-20 w-[150px] h-auto md:w-[200px] md:right-300"
+				src={Sitckers1}
+				alt=""
+			/>
+			<img
+				class="absolute bottom-140 right-80 z-20 w-[100px] h-auto md:w-[200px]"
+				src={HeartBone}
+				alt=""
+			/>
+		</div>
+		<div class="flex justify-between">
+			<div class="flex flex-col gap-4 items-start">
+				<h3
+					class="font-sink text-title-pink text-[69px] leading-[80px] md:text-[137px] md:leading-[130px] uppercase"
+				>
+					Une truffe. <br />Deux cœurs. <br />Une vie transformée.
+				</h3>
+				<button
+					class="bg-third py-[16px] px-[32px] rounded-4xl font-dm transition-all duration-300 hover:bg-transparent hover:border-2 hover:border-third"
+					>Voir les chiens à l’adoption</button
+				>
+			</div>
+			<img
+				class="absolute bottom-34 right-0 z-100 w-[130px] h-auto md:w-[250px]"
+				src={Sitckers2}
+				alt=""
+			/>
 		</div>
 	</div>
 </div>

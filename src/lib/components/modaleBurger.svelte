@@ -12,14 +12,14 @@
 <button class="z-50 top-4 right-4 flex-col md:hidden text-xl" on:click={() => (isOpen = !isOpen)}>
 	{#if isOpen}
 		<a
-			class="font-dm font-bold shadow-2xl flex text-xs items-center gap-4 bg-background-1 py-4 px-8 rounded-4xl"
+			class="absolute font-dm font-bold shadow-2xl flex text-xs items-center gap-4 bg-background-1 py-4 px-8 rounded-4xl"
 			href="/"
 		>
 			<PawPrint class="w-15 h-15 text-black text-xl" />
 			<p class="text-h5">MENU</p>
 		</a>
 	{:else}
-		<a class="font-dm flex text-xs items-center gap-4 py-4 px-8 rounded-4xl" href="/">
+		<a class="font-dm flex text-xs items-center gap-4 py-4 px-8 rounded-4xl z-50" href="/">
 			<Bone class="w-15 h-15 text-black text-xl" />
 			<p class="text-h5">MENU</p>
 		</a>
