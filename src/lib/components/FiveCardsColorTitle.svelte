@@ -2,7 +2,7 @@
 	let { text, title, img, color, colorTitle, cards } = $props();
 </script>
 
-<div class="w-[100vw] md:w-[60vw] flex flex-col gap-4 md:gap-[8px]">
+<div class="w-[80vw] md:w-[58vw] flex flex-col gap-4 md:gap-[8px]">
 	{#each cards as card, i}
 		{@const r = card.data}
 		<div
