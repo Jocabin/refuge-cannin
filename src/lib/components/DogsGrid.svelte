@@ -3,7 +3,7 @@
 
 	import { fetchEntries } from '@builder.io/sdk-svelte';
 	import { PUBLIC_BUILDER_IO_KEY } from '$env/static/public';
-	import Button from './Button.svelte';
+	import Button from './button.svelte';
 	import { page } from '$app/state';
 	import CardList from './CardList.svelte';
 	import { environment, lifestyle, entourage } from '$lib/select-datas';

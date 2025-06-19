@@ -6,7 +6,7 @@
 	import Linkedin from './icons/Linkedin.svelte';
 	import ImagePatch from './ImagePatch.svelte';
 	import image from '$lib/assets/image.jpg';
-	import Button from './Button.svelte';
+	import Button from '$lib/components/button.svelte';
 </script>
 
 <footer class="flex flex-col gap-6">
