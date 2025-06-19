@@ -105,6 +105,18 @@ export const CUSTOM_COMPONENTS = [
                                 type: 'string'
                         },
                         {
+                                name: 'color1',
+                                type: 'color'
+                        },
+                        {
+                                name: 'ctaText',
+                                type: 'string'
+                        },
+                        {
+                                name: 'ctaLink',
+                                type: 'string'
+                        },
+                        {
                                 name: 'rows',
                                 type: 'list',
                                 subFields: [
