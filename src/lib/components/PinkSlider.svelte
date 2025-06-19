@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	let container;
 	let content;
-	const { title } = $props();
+	const { title, img } = $props();
 
 	onMount(() => {
 		const totalWidth = content.offsetWidth;
@@ -24,7 +24,7 @@
 </script>
 
 <div
-	class="flex h-[8vh] gap-6 animate-scroll-left items-center justify-center whitespace-nowrap bg-secondary overflow-hidden"
+	class="flex h-[8vh] gap-6 animate-scroll-left items-center justify-center whitespace-nowrap bg-secondary overflow-hidden -rotate-3"
 	bind:this={container}
 >
 	<div class="flex gap-4 scroll-content justify-center items-center" bind:this={content}>
@@ -37,7 +37,7 @@
 				{#each Array(3) as _}
 					{#each Array(8) as __}
 						<h3 class="font-sink text-4xl uppercase mb-[-3px]">{title}</h3>
-						<PawPrint class="text-black text-4xl shrink-0" />
+						<img src={img} class="text-black text-4xl shrink-0" />
 					{/each}
 				{/each}
 			</div>

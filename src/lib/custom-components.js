@@ -250,6 +250,10 @@ export const CUSTOM_COMPONENTS = [
                                 name: 'title',
                                 type: 'string',
                         },
+                        {
+                                name: 'img',
+                                type: 'file',
+                        },
                 ]
         },
         {
@@ -434,6 +438,36 @@ export const CUSTOM_COMPONENTS = [
                         {
                                 name: 'color',
                                 type: 'color',
+                        },
+                ]
+        },
+        {
+                component: BlocTextCtaImg,
+                name: 'Bloc avec image, texte et bouton',
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string',
+                        },
+                        {
+                                name: 'sousTitle',
+                                type: 'string',
+                        },
+                        {
+                                name: 'text',
+                                type: 'string',
+                        },
+                        {
+                                name: 'color',
+                                type: 'color',
+                        },
+                        {
+                                name: 'ctaText',
+                                type: 'string',
+                        },
+                        {
+                                name: 'ctaLink',
+                                type: 'string',
                         },
                 ]
         },

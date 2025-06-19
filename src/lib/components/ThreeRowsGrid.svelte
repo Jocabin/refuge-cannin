@@ -21,7 +21,7 @@
 					class="w-[312px] h-[312px] px-[16px] py-[16px] flex flex-col rounded-2xl justify-between text-start"
 					style="background-color: {row.color}"
 				>
-					<h3 class="w-[200px] font-sink text-[40px] leading-[90%]">{row.title}</h3>
+					<h3 class="w-[200px] font-sink text-[40px] uppercase leading-[90%]">{row.title}</h3>
 					<ul>
 						<li>
 							<p class="font-dm text-[16px]">{row.text}</p>
