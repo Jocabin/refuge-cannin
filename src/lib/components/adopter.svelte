@@ -1,12 +1,18 @@
 <script>
 	import PictureDog from '$lib/assets/picture-1.png';
+
+	const { text, title, img, color, ctaLink, ctaText, woff1, woff2, textList, colorTitle } =
+		$props();
+
+	const textBtn = false;
 </script>
 
 <div class="py-[12px] px-[16px] flex">
 	<div
-		class="div bg-third rounded-3xl h-[800px] overflow-hidden mx-auto flex items-center justify-between relative"
+		class="divrounded-3xl h-[600px] overflow-hidden mx-auto flex items-center rounded-2xl justify-between relative"
+		style="background-color:{color}"
 	>
-		<svg
+		<!-- <svg
 			class="mix-blend-overlay absolute inset-0 md:w-full md:h-full"
 			xmlns="http://www.w3.org/2000/svg"
 			width="1395"
@@ -70,30 +76,45 @@
 					<stop offset="1" stop-color="#fff" stop-opacity="0" />
 				</radialGradient>
 			</defs>
-		</svg>
+		</svg> -->
 		<div
 			class="w-[1393px] py-4 px-4 flex justify-center items-center relative gap-[90px] md:py-10 md:px-10"
 		>
 			<div class="w-[454px] flex flex-col gap-[10px] items-start">
-				<h2 class="font-sink text-[58px] text-text leading-[90%] uppercase">
-					Comme carole, vous pouvez nous aider, à votre échelle
-				</h2>
-				<p class="font-dm text-[16px]">
-					Faire un don de croquettes, patatipatata. Duis aute irure dolor in reprehenderit in
-					voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-					cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-				<button
-					class="bg-white border-white border-2 py-[16px] px-[32px] rounded-4xl font-dm transition-all duration-300 hover:bg-transparent hover:border-2 hover:border-white"
-					>Faire un don</button
+				<h2
+					class="font-sink text-[58px] text-text leading-[90%] uppercase"
+					style="color: {colorTitle}"
 				>
-				<p class="absolute left-120 top-120 font-just text-[41px] leading-[30px] rotate-10">
-					WoOF! j’adore <br />
-					les croquettes...
+					{title}
+				</h2>
+				<p class="font-dm text-[16px] leading-[120%]">
+					{text}
+				</p>
+				{#if textList && textList.trim() !== ''}
+					<ul>
+						<li>
+							<p class="font-dm text-[16px] leading-[120%] pb-[48px]">
+								{textList}
+							</p>
+						</li>
+					</ul>
+				{/if}
+				{#if ctaText && ctaText.trim() !== ''}
+					<a
+						href={ctaLink}
+						class="bg-white border-white border-2 py-[5px] px-[32px] rounded-4xl font-dm transition-all duration-300 hover:bg-transparent hover:border-2 hover:border-white"
+						>{ctaText}
+					</a>
+				{/if}
+				<p
+					class="absolute left-80 top-120 font-just text-[41px] font-normal leading-[30px] rotate-10"
+				>
+					{woff1} <br />
+					{woff2}
 				</p>
 			</div>
 			<div>
-				<img class="w-[518px]" src={PictureDog} alt="" />
+				<img class="w-[518px]" src={img} alt="" />
 			</div>
 		</div>
 	</div>

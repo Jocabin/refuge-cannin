@@ -6,7 +6,9 @@ import ImagePatch from "./components/ImagePatch.svelte";
 import DogsGrid from "./components/DogsGrid.svelte";
 import AdoptionSeul from "./components/AdoptionSeul.svelte";
 import CardSlider from "./components/CardSlider.svelte";
-import SlideElements from "./components/slideElements.svelte";
+import SlideElements from "./components/SlideElements.svelte";
+import Adopter from "./components/adopter.svelte";
+import BlocTextCtaImg from "./components/BlocTextCtaImg.svelte";
 import Vedettes from "./components/Vedettes.svelte";
 import Headerhero from "./components/headerhero.svelte";
 import Button from "./components/button.svelte";
@@ -276,5 +278,85 @@ export const CUSTOM_COMPONENTS = [
         {
                 component: SearchBar,
                 name: 'Module de recherche',
+        },
+  {
+                component: Adopter,
+                name: 'Adopter un chien',
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string',
+                        },
+                        {
+                                name: 'text',
+                                type: 'string',
+                        },
+                        {
+                                name: 'color',
+                                type: 'color',
+                        },
+                        {
+                                name: 'colorTitle',
+                                type: 'color',
+                        },
+                        {
+                                name: 'img',
+                                type: 'file',
+                        },
+                        {
+                                name: 'ctaText',
+                                type: 'string',
+                        },
+                        {
+                                name: 'ctaLink',
+                                type: 'string',
+                        },
+                        {
+                                name: 'woff1',
+                                type: 'string',
+                        },
+                        {
+                                name: 'woff2',
+                                type: 'string',
+                        },
+                        {
+                                name: 'textList',
+                                type: 'string',
+                        },
+                ]
+        },
+        {
+                component: BlocTextCtaImg,
+                name: 'Bloc avec image, texte et bouton',
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string',
+                        },
+                        {
+                                name: 'text',
+                                type: 'string',
+                        },
+                        {
+                                name: 'color',
+                                type: 'color',
+                        },
+                        {
+                                name: 'colorTitle',
+                                type: 'color',
+                        },
+                        {
+                                name: 'img',
+                                type: 'file',
+                        },
+                        {
+                                name: 'ctaText',
+                                type: 'string',
+                        },
+                        {
+                                name: 'ctaLink',
+                                type: 'string',
+                        },
+                ]
         },
 ]
