@@ -8,6 +8,7 @@ import AdoptionSeul from "./components/AdoptionSeul.svelte";
 import CardSlider from "./components/CardSlider.svelte";
 import SlideElements from "./components/SlideElements.svelte";
 import Adopter from "./components/adopter.svelte";
+import BlocTextCtaImg from "./components/BlocTextCtaImg.svelte";
 export const CUSTOM_COMPONENTS = [
         {
                 component: TextImageBlock,
@@ -262,6 +263,40 @@ export const CUSTOM_COMPONENTS = [
                         },
                         {
                                 name: 'textList',
+                                type: 'string',
+                        },
+                ]
+        },
+        {
+                component: BlocTextCtaImg,
+                name: 'Bloc avec image, texte et bouton',
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string',
+                        },
+                        {
+                                name: 'text',
+                                type: 'string',
+                        },
+                        {
+                                name: 'color',
+                                type: 'color',
+                        },
+                        {
+                                name: 'colorTitle',
+                                type: 'color',
+                        },
+                        {
+                                name: 'img',
+                                type: 'file',
+                        },
+                        {
+                                name: 'ctaText',
+                                type: 'string',
+                        },
+                        {
+                                name: 'ctaLink',
                                 type: 'string',
                         },
                 ]
