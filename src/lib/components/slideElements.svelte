@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	let container;
 	let content;
+	const { text } = $props();
 
 	onMount(() => {
 		const animate = () => {
@@ -31,17 +32,25 @@
 	<div class="flex gap-4 scroll-content justify-center items-center" bind:this={content}>
 		<!-- Contenu dupliqué pour boucle fluide -->
 		{#each Array(2) as _}
-			<h3 class="font-sink text-4xl uppercase mb-[-3px]">LE REFUGE LE PLUS WOOF de gironde</h3>
+			<h3 class="font-sink text-4xl uppercase mb-[-3px]">{text}</h3>
 			<PawPrint class="text-black text-4xl inline-block shrink-0" />
-			<h3 class="font-sink text-4xl uppercase mb-[-3px]">LE REFUGE LE PLUS WOOF de gironde</h3>
+			<h3 class="font-sink text-4xl uppercase mb-[-3px]">{text}</h3>
 			<PawPrint class="text-black text-4xl inline-block shrink-0" />
-			<h3 class="font-sink text-4xl uppercase mb-[-3px]">LE REFUGE LE PLUS WOOF de gironde</h3>
+			<h3 class="font-sink text-4xl uppercase mb-[-3px]">{text}</h3>
 			<PawPrint class="text-black text-4xl inline-block shrink-0" />
-			<h3 class="font-sink text-4xl uppercase mb-[-3px]">LE REFUGE LE PLUS WOOF de gironde</h3>
+			<h3 class="font-sink text-4xl uppercase mb-[-3px]">{text}</h3>
 			<PawPrint class="text-black text-4xl inline-block shrink-0" />
-			<h3 class="font-sink text-4xl uppercase mb-[-3px]">LE REFUGE LE PLUS WOOF de gironde</h3>
+			<h3 class="font-sink text-4xl uppercase mb-[-3px]">{text}</h3>
 			<PawPrint class="text-black text-4xl inline-block shrink-0" />
-			<h3 class="font-sink text-4xl uppercase mb-[-3px]">LE REFUGE LE PLUS WOOF de gironde</h3>
+			<h3 class="font-sink text-4xl uppercase mb-[-3px]">{text}</h3>
+			<PawPrint class="text-black text-4xl inline-block shrink-0" />
+			<h3 class="font-sink text-4xl uppercase mb-[-3px]">{text}</h3>
+			<PawPrint class="text-black text-4xl inline-block shrink-0" />
+			<h3 class="font-sink text-4xl uppercase mb-[-3px]">{text}</h3>
+			<PawPrint class="text-black text-4xl inline-block shrink-0" />
+			<h3 class="font-sink text-4xl uppercase mb-[-3px]">{text}</h3>
+			<PawPrint class="text-black text-4xl inline-block shrink-0" />
+			<h3 class="font-sink text-4xl uppercase mb-[-3px]">{text}</h3>
 			<PawPrint class="text-black text-4xl inline-block shrink-0" />
 		{/each}
 	</div>
