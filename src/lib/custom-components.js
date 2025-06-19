@@ -237,6 +237,10 @@ export const CUSTOM_COMPONENTS = [
                                 type: 'color',
                         },
                         {
+                                name: 'colorTitle',
+                                type: 'color',
+                        },
+                        {
                                 name: 'img',
                                 type: 'file',
                         },

@@ -1,7 +1,8 @@
 <script>
 	import PictureDog from '$lib/assets/picture-1.png';
 
-	const { text, title, img, color, ctaLink, ctaText, woff1, woff2, textList } = $props();
+	const { text, title, img, color, ctaLink, ctaText, woff1, woff2, textList, colorTitle } =
+		$props();
 
 	const textBtn = false;
 </script>
@@ -80,7 +81,10 @@
 			class="w-[1393px] py-4 px-4 flex justify-center items-center relative gap-[90px] md:py-10 md:px-10"
 		>
 			<div class="w-[454px] flex flex-col gap-[10px] items-start">
-				<h2 class="font-sink text-[58px] text-text leading-[90%] uppercase">
+				<h2
+					class="font-sink text-[58px] text-text leading-[90%] uppercase"
+					style="color: {colorTitle}"
+				>
 					{title}
 				</h2>
 				<p class="font-dm text-[16px] leading-[120%]">
