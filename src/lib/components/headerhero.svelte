@@ -98,7 +98,7 @@
 				>
 			</div>
 			<img
-				class="absolute bottom-34 right-0 z-100 w-[130px] h-auto md:w-[250px]"
+				class="absolute bottom-34 right-0 z-20 w-[130px] h-auto md:w-[250px]"
 				src={Sitckers2}
 				alt=""
 			/>
