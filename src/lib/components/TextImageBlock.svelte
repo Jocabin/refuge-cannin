@@ -1,4 +1,6 @@
 <script>
+	import type { COLORTERM } from '$env/static/private';
+
 	let {
 		title,
 		text,
@@ -8,27 +10,29 @@
 		isImageTexture,
 		reverseOrder,
 		ctaText,
-		ctaLink
+		ctaLink,
+		color
 	} = $props();
 </script>
 
 <section
 	class="isolate flex flex-row justify-between items-center gap-4"
-	style={img && isImagebackground ? `background-image: url('${img}');` : ''}
+	style="{img && isImagebackground ? `background-image: url('${img}');` : ''} background-color:"
+	{color}
 	class:imageBackground={img && isImagebackground}
 	class:bg-blend-multiply={isImageTexture}
 >
 	<div class="" class:order-2={reverseOrder}>
 		{#if title}
-			<h2>{title}</h2>
+			<h2 class="font-sink text-[58px] leading-[90%]">{title}</h2>
 		{/if}
 
 		{#if text}
-			<p>{text}</p>
+			<p class="font-dm text-[16px] leading-[120%]">{text}</p>
 		{/if}
 
 		{#if ctaText}
-			<a href={ctaLink}>{ctaText}</a>
+			<a class="font-dm text-[16px]" href={ctaLink}>{ctaText}</a>
 		{/if}
 	</div>
 

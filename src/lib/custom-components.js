@@ -54,6 +54,10 @@ export const CUSTOM_COMPONENTS = [
                                 type: 'string',
                                 defaultValue: "/",
                         },
+                        {
+                                name: 'color',
+                                type: 'color',
+                        },
                 ],
         },
         {
