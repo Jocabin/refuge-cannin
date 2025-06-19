@@ -126,6 +126,11 @@
 				/>
 				<Button>Je m'abonne</Button>
 			</form>
+
+			<label class="flex items-center gap-2 text-sm underline">
+				<input type="checkbox" />
+				J’accepte de recevoir des e–mails de la part du refuge
+			</label>
 		</div>
 	</section>
 

@@ -4,6 +4,8 @@ import ThreeRowsGrid from "$lib/components/ThreeRowsGrid.svelte";
 import Faq from "$lib/components/FAQ.svelte";
 import ImagePatch from "./components/ImagePatch.svelte";
 import DogsGrid from "./components/DogsGrid.svelte";
+import AdoptionSeul from "./components/AdoptionSeul.svelte";
+import CardSlider from "./components/CardSlider.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -155,5 +157,61 @@ export const CUSTOM_COMPONENTS = [
                 name: 'Grille recherche Chiens',
                 inputs: [
                 ]
-        }
+        },
+        {
+                component: AdoptionSeul,
+                name: 'Adoption seule bloc',
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string',
+                        },
+                        {
+                                name: 'text',
+                                type: 'string',
+                        },
+                        {
+                                name: 'ctaText',
+                                type: 'string',
+                        },
+                        {
+                                name: 'ctaLink',
+                                type: 'string',
+                        },
+                ]
+        },
+        {
+                component: CardSlider,
+                name: 'Slider de cartes',
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string',
+                        },
+                        {
+                                name: 'cards',
+                                type: 'list',
+                                subFields: [
+                                        {
+                                                name: 'link',
+                                                type: 'string',
+                                                defaultValue: '/'
+                                        },
+                                        {
+                                                name: 'title',
+                                                type: 'string',
+                                                defaultValue: 'title'
+                                        },
+                                        {
+                                                name: 'img',
+                                                type: 'file',
+                                        },
+                                        {
+                                                name: 'color',
+                                                type: 'color',
+                                        }
+                                ]
+                        },
+                ]
+        },
 ]
