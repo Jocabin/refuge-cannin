@@ -15,9 +15,6 @@
 </script>
 
 <main class=" bg-background-2 overflow-hidden flex flex-col gap-[24px]">
-	<div class="py-[12px] px-[16px]">
-		<Headerhero />
-	</div>
 	{#if canShowContent}
 		<Content
 			model={'page'}

@@ -6,6 +6,10 @@ import ImagePatch from "./components/ImagePatch.svelte";
 import DogsGrid from "./components/DogsGrid.svelte";
 import AdoptionSeul from "./components/AdoptionSeul.svelte";
 import CardSlider from "./components/CardSlider.svelte";
+import Vedettes from "./components/Vedettes.svelte";
+import Headerhero from "./components/headerhero.svelte";
+import Button from "./components/button.svelte";
+import SearchBar from "./components/SearchBar.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -213,5 +217,58 @@ export const CUSTOM_COMPONENTS = [
                                 ]
                         },
                 ]
+        },
+        {
+                component: Vedettes,
+                name: 'Vedettes',
+        },
+        {
+                component: Headerhero,
+                name: 'Hero Banner',
+                canHaveChildren: true,
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string'
+                        },
+                        {
+                                name: 'text',
+                                type: 'string'
+                        },
+                        {
+                                name: 'color',
+                                type: 'color'
+                        },
+                        {
+                                name: 'img',
+                                type: 'file'
+                        },
+                ]
+        },
+        {
+                component: Button,
+                name: 'Button',
+                inputs: [
+                        {
+                                name: 'text',
+                                type: 'string'
+                        },
+                        {
+                                name: 'color',
+                                type: 'color'
+                        },
+                        {
+                                name: 'textColor',
+                                type: 'color'
+                        },
+                        {
+                                name: 'link',
+                                type: 'string'
+                        },
+                ]
+        },
+        {
+                component: SearchBar,
+                name: 'Module de recherche',
         },
 ]
