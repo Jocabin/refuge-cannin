@@ -15,6 +15,8 @@ import SearchBar from "./components/SearchBar.svelte";
 import PinkSlider from "./components/PinkSlider.svelte";
 import HeaderheroOther from "./components/headerheroOther.svelte";
 import BlocTextAndTitle from "./components/BlocTextAndTitle.svelte";
+import BlocTextCta from "./components/BlocTextCta.svelte";
+import FiveCardsColorTitle from "./components/FiveCardsColorTitle.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -442,15 +444,15 @@ export const CUSTOM_COMPONENTS = [
                 ]
         },
         {
-                component: BlocTextCtaImg,
-                name: 'Bloc avec image, texte et bouton',
+                component: BlocTextCta,
+                name: 'Bloc avec texte et bouton',
                 inputs: [
                         {
-                                name: 'title',
+                                name: 'sousTitle',
                                 type: 'string',
                         },
                         {
-                                name: 'sousTitle',
+                                name: 'title',
                                 type: 'string',
                         },
                         {
@@ -468,6 +470,41 @@ export const CUSTOM_COMPONENTS = [
                         {
                                 name: 'ctaLink',
                                 type: 'string',
+                        },
+                ]
+        },
+        {
+                component: FiveCardsColorTitle,
+                name: 'Cinqs blocs avec textes et images',
+                inputs: [
+                        {
+                                name: 'cards',
+                                type: 'list',
+                                subFields: [
+                                        {
+                                                name: 'title',
+                                                type: 'string',
+                                                defaultValue: 'title'
+                                        },
+                                        {
+                                                name: 'text',
+                                                type: 'string',
+                                                defaultValue: 'title'
+                                        },
+
+                                        {
+                                                name: 'img',
+                                                type: 'file',
+                                        },
+                                        {
+                                                name: 'colorTitle',
+                                                type: 'color',
+                                        },
+                                        {
+                                                name: 'color',
+                                                type: 'color',
+                                        }
+                                ]
                         },
                 ]
         },
