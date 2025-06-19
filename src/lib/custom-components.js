@@ -3,6 +3,7 @@ import TextImageBlock from "$lib/components/TextImageBlock.svelte";
 import ThreeRowsGrid from "$lib/components/ThreeRowsGrid.svelte";
 import Faq from "$lib/components/FAQ.svelte";
 import ImagePatch from "./components/ImagePatch.svelte";
+import DogsGrid from "./components/DogsGrid.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -143,6 +144,12 @@ export const CUSTOM_COMPONENTS = [
                                 type: 'string',
                                 defaultValue: 'Description alternative de l\'image',
                         }
+                ]
+        },
+        {
+                component: DogsGrid,
+                name: 'Grille recherche Chiens',
+                inputs: [
                 ]
         }
 ]

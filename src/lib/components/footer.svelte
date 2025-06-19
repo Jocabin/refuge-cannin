@@ -6,6 +6,7 @@
 	import Linkedin from './icons/Linkedin.svelte';
 	import ImagePatch from './ImagePatch.svelte';
 	import image from '$lib/assets/image.jpg';
+	import Button from './Button.svelte';
 </script>
 
 <footer class="flex flex-col gap-6">
@@ -123,12 +124,12 @@
 					placeholder="Votre email"
 					class="p-4 px-5 border-text border-2 rounded-full bg-white flex-1"
 				/>
-				<button type="submit" class="bg-text rounded-full text-white px-6">Je m'abonne</button>
+				<Button>Je m'abonne</Button>
 			</form>
 		</div>
 	</section>
 
-	<section class="bg-accents flex flex-row justify-between items-center overflow-hidden">
+	<section class="bg-accents flex flex-row justify-between items-center overflow-hidden rounded-t-">
 		<div class="flex flex-col justify-between items-start">
 			<div
 				class="p-6 uppercase text-text font-bold letter tracking-wide flex flex-row flex-wrap gap-16 mt-11"
