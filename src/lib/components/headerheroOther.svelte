@@ -1,0 +1,30 @@
+<script>
+	import NoiseFilter from './NoiseFilter.svelte';
+
+	let { title, text, img, color, colorTitle } = $props();
+</script>
+
+<div class="p-5">
+	<div
+		class="rounded-3xl w-full md:p-10 flex flex-col justify-end items-start h-[800px]"
+		style="background-color: {color};"
+	>
+		<!-- <NoiseFilter /> -->
+
+		<div class="flex flex-row justify-between">
+			<div class="flex flex-col gap-3">
+				<h3
+					style="color:{colorTitle}"
+					class="max-w-[930px] font-sink text-title-pink text-[96px] leading-[80px] md:text-[137px] md:leading-[130px] uppercase"
+				>
+					{title}
+				</h3>
+				<p class="max-w-[700px]">{text}</p>
+			</div>
+
+			<div>
+				<img src={img} class="object-cover" width="400" alt="" />
+			</div>
+		</div>
+	</div>
+</div>

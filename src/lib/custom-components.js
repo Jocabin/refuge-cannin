@@ -13,6 +13,7 @@ import Headerhero from "./components/headerhero.svelte";
 import Button from "./components/button.svelte";
 import SearchBar from "./components/SearchBar.svelte";
 import PinkSlider from "./components/PinkSlider.svelte";
+import HeaderheroOther from "./components/headerheroOther.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -328,6 +329,40 @@ export const CUSTOM_COMPONENTS = [
         {
                 component: BlocTextCtaImg,
                 name: 'Bloc avec image, texte et bouton',
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string',
+                        },
+                        {
+                                name: 'text',
+                                type: 'string',
+                        },
+                        {
+                                name: 'color',
+                                type: 'color',
+                        },
+                        {
+                                name: 'colorTitle',
+                                type: 'color',
+                        },
+                        {
+                                name: 'img',
+                                type: 'file',
+                        },
+                        {
+                                name: 'ctaText',
+                                type: 'string',
+                        },
+                        {
+                                name: 'ctaLink',
+                                type: 'string',
+                        },
+                ]
+        },
+        {
+                component: HeaderheroOther,
+                name: 'Header hero autre',
                 inputs: [
                         {
                                 name: 'title',
