@@ -5,7 +5,7 @@
 </script>
 
 <header
-	class="flex items-center gap-4 justify-between px-10 bg-transaprent mt-[20px] z-100 md:flex-row md:items-center md:justify-center md:bg-background-1"
+	class="flex items-center gap-4 justify-between px-10 bg-transaprent mt-[20px] z-100 md:flex-row md:items-center md:justify-center sticky"
 >
 	<a
 		href="/"
