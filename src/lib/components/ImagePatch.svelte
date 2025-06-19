@@ -1,8 +1,11 @@
 <script>
-	let { img, imgAlt } = $props();
+	let { img, imgAlt, color = '#fff' } = $props();
 </script>
 
-<div class="clipped-image rotate-180 bg-white flex justify-center items-center p-10 w-full h-full">
+<div
+	class="clipped-image rotate-180 flex justify-center items-center p-10 w-full h-full"
+	style="background-color: {color};"
+>
 	<img src={img} alt={imgAlt} class="clipped-image -rotate-180 aspect-square object-cover" />
 </div>
 
