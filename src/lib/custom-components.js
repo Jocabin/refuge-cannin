@@ -97,6 +97,14 @@ export const CUSTOM_COMPONENTS = [
                                 type: 'string'
                         },
                         {
+                                name: 'title2',
+                                type: 'string'
+                        },
+                        {
+                                name: 'text2',
+                                type: 'string'
+                        },
+                        {
                                 name: 'rows',
                                 type: 'list',
                                 subFields: [

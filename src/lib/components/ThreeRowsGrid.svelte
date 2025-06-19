@@ -1,11 +1,15 @@
 <script>
-	let { title, text, rows } = $props();
+	let { title, text, title2, text2, rows } = $props();
 </script>
 
-<section class="flex flex-col justify-center items-center gap-10">
+<section class="flex flex-col justify-center items-center pb-[16px]">
 	<h2 class="w-[1012px] font-sink text-[56px] uppercase text-center leading-[90%] pb-2">
 		{title}
 	</h2>
+	<h2 class="w-[1012px] font-sink text-[56px] uppercase text-center leading-[90%] pb-2">
+		{title2}
+	</h2>
+	<p class="w-[800px] font-dm text-[16px] text-center pb-[16px]">{text2}</p>
 	<div class="flex justify-center items-center gap-[32px]">
 		{#each rows as row}
 			<div
