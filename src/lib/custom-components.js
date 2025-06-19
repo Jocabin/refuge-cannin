@@ -9,6 +9,11 @@ import CardSlider from "./components/CardSlider.svelte";
 import SlideElements from "./components/SlideElements.svelte";
 import Adopter from "./components/adopter.svelte";
 import BlocTextCtaImg from "./components/BlocTextCtaImg.svelte";
+import Vedettes from "./components/Vedettes.svelte";
+import Headerhero from "./components/headerhero.svelte";
+import Button from "./components/button.svelte";
+import SearchBar from "./components/SearchBar.svelte";
+
 export const CUSTOM_COMPONENTS = [
         {
                 component: TextImageBlock,
@@ -212,6 +217,10 @@ export const CUSTOM_COMPONENTS = [
                 ]
         },
         {
+                component: Vedettes,
+                name: 'Vedettes',
+        },
+        {
                 component: SlideElements,
                 name: 'Slider de text automatique',
                 inputs: [
@@ -222,6 +231,55 @@ export const CUSTOM_COMPONENTS = [
                 ]
         },
         {
+                component: Headerhero,
+                name: 'Hero Banner',
+                canHaveChildren: true,
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string'
+                        },
+                        {
+                                name: 'text',
+                                type: 'string'
+                        },
+                        {
+                                name: 'color',
+                                type: 'color'
+                        },
+                        {
+                                name: 'img',
+                                type: 'file'
+                        },
+                ]
+        },
+        {
+                component: Button,
+                name: 'Button',
+                inputs: [
+                        {
+                                name: 'text',
+                                type: 'string'
+                        },
+                        {
+                                name: 'color',
+                                type: 'color'
+                        },
+                        {
+                                name: 'textColor',
+                                type: 'color'
+                        },
+                        {
+                                name: 'link',
+                                type: 'string'
+                        },
+                ]
+        },
+        {
+                component: SearchBar,
+                name: 'Module de recherche',
+        },
+  {
                 component: Adopter,
                 name: 'Adopter un chien',
                 inputs: [

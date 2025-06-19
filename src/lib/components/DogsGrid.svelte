@@ -8,8 +8,6 @@
 	import CardList from './CardList.svelte';
 	import { environment, lifestyle, entourage } from '$lib/select-datas';
 
-	// ?env=campagne&quotidien=work&entourage=familia
-
 	/**
 	 * @type {string | any[]}
 	 */
@@ -53,47 +51,53 @@
 <section class="p-20 flex flex-col gap-16">
 	<h2 class="font-just text-4xl -rotate-3">Tu es le <br /> maitre parfait ?</h2>
 
-	<nav class="flex flex-row gap-4">
-		<select
-			class="flex-1 bg-white rounded-full border-2 border-text p-6 font-dm font-semibold"
-			name=""
-			id=""
-			bind:value={envSearch}
-		>
-			{#each environment as o}
-				<option value={o.value}>{o.text}</option>
-			{/each}
-		</select>
+	<nav class="flex flex-col gap-4 bg-white rounded-3xl p-8">
+		<p class="font-dm font-bold text-text">Recherchez le wouf de votre vie</p>
+		<div class="flex flex-row gap-4 justify-between">
+			<select
+				class="flex-1 bg-white rounded-full border-2 border-text p-6 font-dm font-semibold"
+				name=""
+				id=""
+				bind:value={envSearch}
+			>
+				{#each environment as o}
+					<option value={o.value}>{o.text}</option>
+				{/each}
+			</select>
 
-		<select
-			class="flex-1 bg-white rounded-full border-2 border-text p-6 font-dm font-semibold"
-			name=""
-			id=""
-			bind:value={lifestyleSearch}
-		>
-			{#each lifestyle as o}
-				<option value={o.value}>{o.text}</option>
-			{/each}
-		</select>
+			<select
+				class="flex-1 bg-white rounded-full border-2 border-text p-6 font-dm font-semibold"
+				name=""
+				id=""
+				bind:value={lifestyleSearch}
+			>
+				{#each lifestyle as o}
+					<option value={o.value}>{o.text}</option>
+				{/each}
+			</select>
 
-		<select
-			class="flex-1 bg-white rounded-full border-2 border-text p-6 font-dm font-semibold"
-			name=""
-			id=""
-			bind:value={entourageSearch}
-		>
-			{#each entourage as o}
-				<option value={o.value}>{o.text}</option>
-			{/each}
-		</select>
+			<select
+				class="flex-1 bg-white rounded-full border-2 border-text p-6 font-dm font-semibold"
+				name=""
+				id=""
+				bind:value={entourageSearch}
+			>
+				{#each entourage as o}
+					<option value={o.value}>{o.text}</option>
+				{/each}
+			</select>
 
-		<Button
-			onclick={() => {
-				results = filterDogs();
-			}}
-		>
-			Rechercher
-		</Button>
+			<Button
+				color="#7F82DD"
+				textColor="#010344"
+				text="Va chercher !"
+				onclick={() => {
+					results = filterDogs();
+				}}
+			>
+				Rechercher
+			</Button>
+		</div>
 	</nav>
 
 	<CardList {results} />
