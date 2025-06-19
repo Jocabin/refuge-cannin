@@ -6,7 +6,7 @@
 	{#each cards as card, i}
 		{@const r = card.data}
 		<div
-			class="w-[600px] px-[24px] py-[16px] flex flex-col rounded-2xl"
+			class="w-[350px] md:w-[670px] px-[24px] py-[16px] flex flex-col rounded-2xl"
 			style="background-color:{card.color};"
 		>
 			<div class="flex items-end justify-start gap-4">
