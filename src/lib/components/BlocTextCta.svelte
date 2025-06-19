@@ -11,12 +11,13 @@
 			{title}
 		</h2>
 		<p class=" font-dm text-[16px] text-center md:text-start">{text}</p>
-		<a
-			style="background-color: {color}; border-color:{color}"
-			class="border-2 py-[5px] px-[32px] rounded-4xl font-dm transition-all duration-300 hover:bg-transparent hover:border-accents"
-			href={ctaLink}
-		>
-			{ctaText}
-		</a>
+		{#if ctaText && ctaText.trim() !== ''}
+			<a
+				href={ctaLink}
+				style="background-color:{color}; border-color:{color};"
+				class=" border-2 py-[10px] px-[32px] rounded-4xl font-dm"
+				>{ctaText}
+			</a>
+		{/if}
 	</div>
 </div>
