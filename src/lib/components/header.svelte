@@ -1,5 +1,6 @@
 <script>
 	import Icon from '../assets/icon-header.png';
+	import DropDown from './DropDown.svelte';
 	import ModaleBurger from './modaleBurger.svelte';
 	import CaretDown from 'phosphor-icons-svelte/IconCaretDownRegular.svelte';
 </script>
@@ -53,6 +54,9 @@
 				class="flex items-center bg-transparent rounded-4xl py-[16px] px-[16px] hover:bg-accents focus:bg-accents"
 				href="/">Signalement</a
 			>
+		</li>
+		<li>
+			<DropDown />
 		</li>
 	</ul>
 	<ul>
