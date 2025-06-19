@@ -6,13 +6,13 @@ import ImagePatch from "./components/ImagePatch.svelte";
 import DogsGrid from "./components/DogsGrid.svelte";
 import AdoptionSeul from "./components/AdoptionSeul.svelte";
 import CardSlider from "./components/CardSlider.svelte";
-import SlideElements from "./components/SlideElements.svelte";
 import Adopter from "./components/adopter.svelte";
 import BlocTextCtaImg from "./components/BlocTextCtaImg.svelte";
 import Vedettes from "./components/Vedettes.svelte";
 import Headerhero from "./components/headerhero.svelte";
 import Button from "./components/button.svelte";
 import SearchBar from "./components/SearchBar.svelte";
+import SlideElements from "./components/SlideElements.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
