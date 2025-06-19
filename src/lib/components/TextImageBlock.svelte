@@ -1,6 +1,4 @@
 <script>
-	import type { COLORTERM } from '$env/static/private';
-
 	let {
 		title,
 		text,
