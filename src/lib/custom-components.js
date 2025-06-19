@@ -9,6 +9,7 @@ import CardSlider from "./components/CardSlider.svelte";
 import Vedettes from "./components/Vedettes.svelte";
 import Headerhero from "./components/headerhero.svelte";
 import Button from "./components/button.svelte";
+import SearchBar from "./components/SearchBar.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -265,5 +266,9 @@ export const CUSTOM_COMPONENTS = [
                                 type: 'string'
                         },
                 ]
+        },
+        {
+                component: SearchBar,
+                name: 'Module de recherche',
         },
 ]

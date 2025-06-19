@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="rounded-3xl mx-5 w-screen md:p-10 h-[850px] overflow-hidden flex flex-col justify-end items-start relative md:h-screen"
+	class="rounded-3xl mx-5 w-full md:p-10 h-[850px] overflow-hidden flex flex-col justify-end items-start relative md:h-screen"
 	style="background-color: {color};"
 >
 	{#if false}
