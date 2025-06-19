@@ -8,6 +8,7 @@ import AdoptionSeul from "./components/AdoptionSeul.svelte";
 import CardSlider from "./components/CardSlider.svelte";
 import Vedettes from "./components/Vedettes.svelte";
 import Headerhero from "./components/headerhero.svelte";
+import Button from "./components/button.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -240,6 +241,28 @@ export const CUSTOM_COMPONENTS = [
                         {
                                 name: 'img',
                                 type: 'file'
+                        },
+                ]
+        },
+        {
+                component: Button,
+                name: 'Button',
+                inputs: [
+                        {
+                                name: 'text',
+                                type: 'string'
+                        },
+                        {
+                                name: 'color',
+                                type: 'color'
+                        },
+                        {
+                                name: 'textColor',
+                                type: 'color'
+                        },
+                        {
+                                name: 'link',
+                                type: 'string'
                         },
                 ]
         },
