@@ -50,13 +50,7 @@
 						placeholder="Votre adresse e–mail"
 						class="rounded-full px-4 py-2 w-[600px] border bg-background-1 border-black"
 					/>
-<<<<<<< HEAD
 					<Button>Je m’abonne</Button>
-=======
-					<button class="bg-title-pink text-white px-6 py-2 rounded-full font-light"
-						>Je m’abonne</button
-					>
->>>>>>> f25ff63 (header2.0)
 				</div>
 				<label class="flex items-center gap-2 text-sm underline">
 					<input type="checkbox" />
