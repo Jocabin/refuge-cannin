@@ -24,15 +24,15 @@
 >
 	<div class="" class:order-2={reverseOrder}>
 		{#if title}
-			<h2 class="font-sink text-[58px] leading-[90%]">{title}</h2>
+			<h2 class="font-sink text-[58px] leading-[90%] text-{color}">{title}</h2>
 		{/if}
 
 		{#if text}
-			<p class="font-dm text-[16px] leading-[120%]">{text}</p>
+			<p class="font-dm text-[16px] leading-[120%] text-{color}">{text}</p>
 		{/if}
 
 		{#if ctaText}
-			<a class="font-dm text-[16px]" href={ctaLink}>{ctaText}</a>
+			<a class="font-dm text-[16px] text-{color}" href={ctaLink}>{ctaText}</a>
 		{/if}
 	</div>
 
