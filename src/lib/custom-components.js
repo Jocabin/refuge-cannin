@@ -279,7 +279,7 @@ export const CUSTOM_COMPONENTS = [
                 component: SearchBar,
                 name: 'Module de recherche',
         },
-  {
+        {
                 component: Adopter,
                 name: 'Adopter un chien',
                 inputs: [
