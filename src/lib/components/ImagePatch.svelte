@@ -3,7 +3,7 @@
 </script>
 
 <div class="clipped-image rotate-180 bg-white flex justify-center items-center p-10 w-full h-full">
-	<img src={img} alt={imgAlt} class="clipped-image -rotate-180" />
+	<img src={img} alt={imgAlt} class="clipped-image -rotate-180 aspect-square object-cover" />
 </div>
 
 <style>

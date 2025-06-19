@@ -5,8 +5,6 @@
 
 	let dogs = $state([]);
 
-	$inspect(dogs);
-
 	$effect(() => {
 		fetchEntries({
 			model: 'chien',

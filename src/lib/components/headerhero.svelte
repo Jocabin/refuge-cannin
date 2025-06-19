@@ -9,10 +9,8 @@
 		class="rounded-3xl w-full md:p-10 flex flex-col justify-end items-start h-screen"
 		style="background-color: {color};"
 	>
-		<!-- <NoiseFilter /> -->
-
-		<div class="flex flex-row justify-between">
-			<div class="flex flex-col gap-3">
+		<div class="flex flex-row justify-between w-full">
+			<div class="flex flex-col gap-3 w-full">
 				<h3
 					class="max-w-[830px] font-sink text-title-pink text-[69px] leading-[80px] md:text-[137px] md:leading-[130px] uppercase"
 				>

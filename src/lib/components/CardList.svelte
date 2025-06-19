@@ -11,7 +11,7 @@
 			{@const r = result.data}
 
 			<article
-				class="bg-white w-full rounded-lg overflow-hidden flex flex-col"
+				class="bg-white w-full rounded-lg overflow-hidden flex flex-col max-h-[350px]"
 				class:firstOne={i == 0}
 			>
 				<div class="flex-1 w-full bg-red-50 overflow-hidden">

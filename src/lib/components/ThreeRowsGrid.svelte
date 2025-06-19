@@ -2,9 +2,9 @@
 	let { title, text, title2, text2, color, color1, ctaText, ctaLink, rows } = $props();
 </script>
 
-<section class="flex flex-col justify-center items-center pb-[16px]">
+<section class="flex flex-col justify-center items-center gap-10 py-24">
 	<h2
-		class="w-[350px] md:w-[1012px] font-sink text-[40px] md:text-[56px] uppercase text-center leading-[90%] pb-2"
+		class="w-[350px] md:w-[1012px] font-sink text-[56px] uppercase text-center leading-[90%] pb-2"
 	>
 		{title}
 	</h2>

@@ -2,7 +2,7 @@
 	const { text, title, img, color, ctaLink, ctaText, colorTitle } = $props();
 </script>
 
-<div class="flex flex-col justify-center items-center">
+<div class="flex flex-col justify-center items-center py-24">
 	<div class="gap-4 w-[650px] flex flex-col items-center">
 		<img class="w-[105px] h-[105px]" src={img} alt="" />
 		<h2
