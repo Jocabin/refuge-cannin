@@ -14,6 +14,7 @@ import Button from "./components/button.svelte";
 import SearchBar from "./components/SearchBar.svelte";
 import PinkSlider from "./components/PinkSlider.svelte";
 import HeaderheroOther from "./components/headerheroOther.svelte";
+import BlocTextAndTitle from "./components/BlocTextAndTitle.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -391,6 +392,28 @@ export const CUSTOM_COMPONENTS = [
                         {
                                 name: 'ctaLink',
                                 type: 'string',
+                        },
+                ]
+        },
+        {
+                component: BlocTextAndTitle,
+                name: 'Titre et texte',
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string',
+                        },
+                        {
+                                name: 'title2',
+                                type: 'string',
+                        },
+                        {
+                                name: 'text',
+                                type: 'string',
+                        },
+                        {
+                                name: 'color',
+                                type: 'color',
                         },
                 ]
         },

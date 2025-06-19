@@ -114,7 +114,7 @@
 				</p>
 			</div>
 			<div>
-				<img class="w-[518px]" src={img} alt="" />
+				<img class="" src={img} width="380" alt="" />
 			</div>
 		</div>
 	</div>
