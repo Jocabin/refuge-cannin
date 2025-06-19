@@ -39,80 +39,16 @@
 	</section>
 
 	<section
-		class="flex flex-row justify-center items-center gap-6 w-full p-6 bg-secondary rounded-3xl"
+		class="flex flex-row justify-center items-center gap-6 w-full p-8 py-20 bg-secondary rounded-3xl"
 	>
-		<svg
-			class="mix-blend-overlay w-full h-full absolute inset-0"
-			xmlns="http://www.w3.org/2000/svg"
-			width="1395"
-			height="800"
-			viewBox="0 0 1395 800"
-			fill="none"
-		>
-			<g filter="url(#filter0_n_177_152)">
-				<rect
-					width="1395"
-					height="800"
-					rx="24"
-					fill="url(#paint0_radial_177_152)"
-					fill-opacity="0.6"
-				/>
-			</g>
-			<defs>
-				<filter
-					id="filter0_n_177_152"
-					x="0"
-					y="0"
-					width="1395"
-					height="800"
-					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
-				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
-					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-					<feTurbulence
-						type="fractalNoise"
-						baseFrequency="1 1"
-						stitchTiles="stitch"
-						numOctaves="3"
-						result="noise"
-						seed="9413"
-					/>
-					<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
-					<feComponentTransfer in="alphaNoise" result="coloredNoise1">
-						<feFuncA
-							type="discrete"
-							tableValues="0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
-						/>
-					</feComponentTransfer>
-					<feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
-					<feFlood flood-color="#7F82DD" result="color1Flood" />
-					<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
-					<feMerge result="effect1_noise_177_152">
-						<feMergeNode in="shape" />
-						<feMergeNode in="color1" />
-					</feMerge>
-				</filter>
-				<radialGradient
-					id="paint0_radial_177_152"
-					cx="0"
-					cy="0"
-					r="1"
-					gradientUnits="userSpaceOnUse"
-					gradientTransform="translate(42.5001 16.4999) rotate(29.6472) scale(1309.99 2320.65)"
-				>
-					<stop stop-color="#000" />
-					<stop offset="1" stop-color="#fff" stop-opacity="0" />
-				</radialGradient>
-			</defs>
-		</svg>
-
 		<div class="w-[400px]">
 			<ImagePatch img={image} imgAlt="" />
 		</div>
 
-		<div class="flex flex-col gap-6 flex-1">
-			<h2 class="font-sink text-[58px]">Suivez leurs histoires</h2>
+		<div class="flex flex-col gap-6">
+			<h2 class="font-sink text-[58px] leading-[90%] max-w-[530px]">
+				Le refuge, côté coulisses. Truffe sur l’info.
+			</h2>
 			<p>
 				Recevez chaque mois des nouvelles du refuge, des portraits de chiens à l’adoption, des
 				conseils et des actions à soutenir.
@@ -122,7 +58,7 @@
 				<input
 					type="email"
 					placeholder="Votre email"
-					class="p-4 px-5 border-text border-2 rounded-full bg-white flex-1"
+					class="p-4 px-5 border-text border-2 rounded-full bg-white flex-1 max-w-[673px]"
 				/>
 				<Button text="Je m'abonne" color="#7F82DD" textColor="#010344" />
 			</form>
