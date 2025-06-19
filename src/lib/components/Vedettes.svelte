@@ -17,7 +17,7 @@
 </script>
 
 <section class="p-20 flex flex-col gap-16">
-	<h2 class="font-sink text-6xl">Nos vedettes</h2>
+	<h2 class="font-sink text-6xl uppercase">Nos vedettes</h2>
 
 	<CardList results={dogs} />
 </section>
