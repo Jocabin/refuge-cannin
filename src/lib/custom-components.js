@@ -175,6 +175,11 @@ export const CUSTOM_COMPONENTS = [
                                 name: 'imgAlt',
                                 type: 'string',
                                 defaultValue: 'Description alternative de l\'image',
+                        },
+                        {
+                                name: 'color',
+                                type: 'color',
+                                defaultValue: '#fff'
                         }
                 ]
         },

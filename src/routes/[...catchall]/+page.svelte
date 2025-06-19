@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>{data?.content?.name} | Le Refuge Cannin</title>
+	<title>{data?.content?.data.title} | Le Refuge Cannin</title>
 </svelte:head>
 
 <main class=" bg-background-2 overflow-hidden flex flex-col gap-[24px]">
