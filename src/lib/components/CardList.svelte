@@ -39,8 +39,4 @@
 		grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
 		grid-template-rows: repeat(auto-fill, 350px);
 	}
-
-	.firstOne {
-		grid-row: 1 / 3;
-	}
 </style>
