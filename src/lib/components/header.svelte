@@ -31,7 +31,7 @@
 				>
 
 				<DropDown
-					className="hidden group-hover:block absolute left-62 top-15 transition-all duration-300"
+					className="hidden group-hover:block absolute left-125 top-15 transition-all duration-300"
 				>
 					<ul
 						class=" flex flex-col bg-background-1 w-[300px] divide-y divide-[rgba(1,3,68,0.05)] gap-[16px] px-4 py-4 rounded-2xl"
@@ -61,7 +61,7 @@
 					<CaretDown class="text-xl" /></a
 				>
 				<DropDown
-					className="hidden group-hover:block absolute left-100 top-15 transition-all duration-300"
+					className="hidden group-hover:block absolute left-170 top-15 transition-all duration-300"
 				>
 					<ul
 						class=" flex flex-col bg-background-1 w-[300px] divide-y divide-[rgba(1,3,68,0.05)] gap-[16px] px-4 py-4 rounded-2xl"
@@ -93,7 +93,7 @@
 					<CaretDown class="text-xl" />
 				</a>
 				<DropDown
-					className="hidden group-hover:block absolute left-135 top-15 transition-all duration-300"
+					className="hidden group-hover:block absolute left-200 top-15 transition-all duration-300"
 				>
 					<ul
 						class=" flex flex-col bg-background-1 w-[300px] divide-y divide-[rgba(1,3,68,0.05)] gap-[16px] px-4 py-4 rounded-2xl"
@@ -105,8 +105,7 @@
 							/>
 						</li>
 						<li class="group/soutenir pb-4 flex justify-between items-center">
-							<a class="font-dm text-[16px] font-bold" href="/devenir-bnenevole">Devenir adhérent</a
-							>
+							<a class="font-dm text-[16px] font-bold" href="/">Devenir adhérent</a>
 							<ArrowRight
 								class="opacity-0 group-hover/soutenir:opacity-100 transition-opacity duration-300 w-4 h-4"
 							/>
@@ -144,7 +143,7 @@
 					<CaretDown class="text-xl" /></a
 				>
 				<DropDown
-					className="hidden group-hover:block absolute left-165 top-15 transition-all duration-300"
+					className="hidden group-hover:block absolute left-230 top-15 transition-all duration-300"
 				>
 					<ul
 						class=" flex flex-col bg-background-1 w-[300px] divide-y divide-[rgba(1,3,68,0.05)] gap-[16px] px-4 py-4 rounded-2xl"
@@ -189,7 +188,7 @@
 				</a>
 				<a
 					class="font-dm font-bold flex items-center bg-transparent rounded-4xl md:bg-third md:focus:bg-accents md:py-4 md:px-8"
-					href="/"
+					href="/don"
 				>
 					<p class="hidden md:flex">Faire un don</p>
 				</a>
