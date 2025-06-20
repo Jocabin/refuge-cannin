@@ -52,7 +52,7 @@
 						class="rounded-full px-4 py-2 w-[350px] md:w-[600px] border bg-background-1 border-black"
 					/>
 					<button
-						class="font-dm text-[16px] px-[36px] py-[8px] border-2 transition-all ease-in-out duration-300 border-title-pink bg-title-red rounded-4xl text-white hover:bg-transparent hover:text-title-pink"
+						class="w-[15vw] font-dm text-[16px] px-[36px] py-[8px] border-2 transition-all ease-in-out duration-300 border-title-pink bg-title-red rounded-4xl text-white hover:bg-transparent hover:text-title-pink"
 						>Je m’abonne</button
 					>
 				</div>
