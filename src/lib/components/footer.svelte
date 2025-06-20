@@ -70,7 +70,7 @@
 				J’accepte de recevoir des e–mails de la part du refuge
 			</label>
 		</div>
-	</section> -->
+		<div>
 			<Newletters />
 		</div>
 	</section>
