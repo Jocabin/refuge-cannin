@@ -21,6 +21,7 @@ import ThreeCardsColorTitle from "./components/ThreeCardsColorTitle.svelte";
 import ThreeDogsGrid from "./components/ThreeDogsGrid.svelte";
 import LayoutDog from "./components/LayoutDog.svelte";
 import HeaderHeroDog from "./components/HeaderHeroDog.svelte";
+import BenevoleForm from "./components/BenevoleForm.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -673,6 +674,21 @@ export const CUSTOM_COMPONENTS = [
                         {
                                 name: 'ctaLink',
                                 type: 'string'
+                        },
+
+                ]
+        },
+        {
+                component: BenevoleForm,
+                name: 'Formulaire Bénévole',
+                inputs: [
+                        {
+                                name: 'text',
+                                type: 'string'
+                        },
+                        {
+                                name: 'color',
+                                type: 'color'
                         },
 
                 ]
