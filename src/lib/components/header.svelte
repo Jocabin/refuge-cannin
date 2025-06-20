@@ -32,7 +32,7 @@
 				>
 
 				<DropDown
-					className="hidden group-hover:block absolute left-125 top-15 transition-all duration-300"
+					className="hidden group-hover:block absolute left-62 top-15 transition-all duration-300"
 				>
 					<ul
 						class=" flex flex-col bg-background-1 w-[300px] divide-y divide-[rgba(1,3,68,0.05)] gap-[16px] px-4 py-4 rounded-2xl"
@@ -62,7 +62,7 @@
 					<CaretDown class="text-xl" /></a
 				>
 				<DropDown
-					className="hidden group-hover:block absolute left-170 top-15 transition-all duration-300"
+					className="hidden group-hover:block absolute left-105 top-15 transition-all duration-300"
 				>
 					<ul
 						class=" flex flex-col bg-background-1 w-[300px] divide-y divide-[rgba(1,3,68,0.05)] gap-[16px] px-4 py-4 rounded-2xl"
@@ -94,7 +94,7 @@
 					<CaretDown class="text-xl" />
 				</a>
 				<DropDown
-					className="hidden group-hover:block absolute left-200 top-15 transition-all duration-300"
+					className="hidden group-hover:block absolute left-138 top-15 transition-all duration-300"
 				>
 					<ul
 						class=" flex flex-col bg-background-1 w-[300px] divide-y divide-[rgba(1,3,68,0.05)] gap-[16px] px-4 py-4 rounded-2xl"
@@ -144,7 +144,7 @@
 					<CaretDown class="text-xl" /></a
 				>
 				<DropDown
-					className="hidden group-hover:block absolute left-230 top-15 transition-all duration-300"
+					className="hidden group-hover:block absolute left-168 top-15 transition-all duration-300"
 				>
 					<ul
 						class=" flex flex-col bg-background-1 w-[300px] divide-y divide-[rgba(1,3,68,0.05)] gap-[16px] px-4 py-4 rounded-2xl"
