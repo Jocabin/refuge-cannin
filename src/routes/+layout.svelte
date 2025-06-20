@@ -4,7 +4,7 @@
 	import '../app.css';
 	const { children } = $props();
 
-	let showHeader = $state(false);
+	let showHeader = $state(true);
 	let last = 0;
 
 	function scroll() {
