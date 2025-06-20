@@ -1,11 +1,10 @@
 <script>
 	import Button from '$lib/components/button.svelte';
 	import ImagePatch from '$lib/components/ImagePatch.svelte';
-	import ThreeRowsGrid from '$lib/components/ThreeRowsGrid.svelte';
 
 	let { data } = $props();
 	let dog = data.dog.data;
-	console.log(data);
+	console.log('ici', data);
 </script>
 
 <svelte:head>
