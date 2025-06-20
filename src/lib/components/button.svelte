@@ -5,7 +5,7 @@
 {#if link}
 	<a
 		href={link}
-		class="w-fit block rounded-full px-10 py-6 font-semibold font-dm"
+		class="w-fit block rounded-full px-10 py-[8px] font-semibold font-dm"
 		style="background-color: {color}; color: {textColor};"
 	>
 		{text}
@@ -13,7 +13,7 @@
 {:else}
 	<button
 		{onclick}
-		class="w-fit rounded-full px-10 py-6 font-semibold font-dm"
+		class="w-fit rounded-full px-10 py-[8px] font-semibold font-dm"
 		style="background-color: {color}; color: {textColor};"
 	>
 		{text}
