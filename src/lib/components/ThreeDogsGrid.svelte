@@ -13,7 +13,7 @@
 	>
 		{title2}
 	</h2>
-	<p class="w-[350px] md:w-[800px] font-dm text-[16px] text-center pb-[16px]">{text2}</p>
+	<p class="w-[350px] md:w-[800px] font-dm text-[16px] text-center pb-[80px]">{text2}</p>
 	<div class="flex flex-col justify-center items-center gap-[32px]">
 		<div class="flex flex-col md:flex-row gap-[32px] justify-between">
 			{#each rows as row}
