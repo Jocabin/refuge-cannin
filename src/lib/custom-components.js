@@ -17,6 +17,8 @@ import HeaderheroOther from "./components/headerheroOther.svelte";
 import BlocTextAndTitle from "./components/BlocTextAndTitle.svelte";
 import BlocTextCta from "./components/BlocTextCta.svelte";
 import FiveCardsColorTitle from "./components/FiveCardsColorTitle.svelte";
+import ThreeCardsColorTitle from "./components/ThreeCardsColorTitle.svelte";
+import ThreeDogsGrid from "./components/ThreeDogsGrid.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -424,6 +426,10 @@ export const CUSTOM_COMPONENTS = [
                                 name: 'ctaLink',
                                 type: 'string',
                         },
+                        {
+                                name: 'ctaColor',
+                                type: 'color',
+                        },
                 ]
         },
         {
@@ -511,6 +517,92 @@ export const CUSTOM_COMPONENTS = [
                                         }
                                 ]
                         },
+                ]
+        },
+        {
+                component: ThreeCardsColorTitle,
+                name: 'Cinqs blocs avec textes et images',
+                inputs: [
+                        {
+                                name: 'cards',
+                                type: 'list',
+                                subFields: [
+                                        {
+                                                name: 'title',
+                                                type: 'string',
+                                                defaultValue: 'title'
+                                        },
+                                        {
+                                                name: 'text',
+                                                type: 'string',
+                                                defaultValue: 'title'
+                                        },
+
+                                        {
+                                                name: 'img',
+                                                type: 'file',
+                                        },
+                                        {
+                                                name: 'colorTitle',
+                                                type: 'color',
+                                        },
+                                        {
+                                                name: 'color',
+                                                type: 'color',
+                                        }
+                                ]
+                        },
+                ]
+        },
+        {
+                component: ThreeDogsGrid,
+                name: 'Grille 3 chiens colonnes',
+                inputs: [
+                        {
+                                name: 'title',
+                                type: 'string'
+                        },
+                        {
+                                name: 'title2',
+                                type: 'string'
+                        },
+                        {
+                                name: 'text2',
+                                type: 'string'
+                        },
+                        {
+                                name: 'ctaColor',
+                                type: 'color'
+                        },
+                        {
+                                name: 'ctaText',
+                                type: 'string'
+                        },
+                        {
+                                name: 'ctaLink',
+                                type: 'string'
+                        },
+                        {
+                                name: 'rows',
+                                type: 'list',
+                                subFields: [
+
+                                        {
+                                                name: 'title',
+                                                type: 'string',
+                                                defaultValue: 'Titre',
+                                        },
+                                        {
+                                                name: 'text',
+                                                type: 'string',
+                                                defaultValue: 'lorem ipsum'
+                                        },
+                                        {
+                                                name: 'img',
+                                                type: 'file'
+                                        },
+                                ]
+                        }
                 ]
         },
 ]
