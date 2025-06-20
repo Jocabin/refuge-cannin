@@ -4,7 +4,7 @@
 
 <div class="flex py-[12px] px-[16px]">
 	<div
-		class="bg-secondary rounded-3xl h-[456px] overflow-hidden mx-auto flex items-end relative w-full"
+		class="w-[400px] rounded-3xl h-[750px] md:h-[456px] overflow-hidden mx-auto flex items-start relative md:w-full"
 	>
 		<!-- SVG de fond -->
 		<!-- <svg
@@ -31,8 +31,10 @@
 		</svg> -->
 
 		<!-- Contenu -->
-		<div class="relative z-10 h-[456px] flex items-center justify-between px-[32px]">
-			<div class="w-[30%]">
+		<div
+			class="flex-col md:flex-row gap-4 relative z-10 h-[456px] flex items-center justify-between px-[32px]"
+		>
+			<div class="w-[60%] md:w-[30%]">
 				<img class="w-full max-w-[800px]" src={Picture3} alt="Visuel newsletter" />
 			</div>
 			<div class="w-[60%] space-y-4">
@@ -43,11 +45,11 @@
 					Recevez chaque mois des nouvelles du refuge, des portraits de chiens à l’adoption, des
 					conseils et des actions à soutenir.
 				</p>
-				<div class="flex gap-4 items-center">
+				<div class="flex flex-col md:flex-row gap-4 items-center">
 					<input
 						type="email"
 						placeholder="Votre adresse e–mail"
-						class="rounded-full px-4 py-2 w-[600px] border bg-background-1 border-black"
+						class="rounded-full px-4 py-2 w-[350px] md:w-[600px] border bg-background-1 border-black"
 					/>
 					<button
 						class="font-dm text-[16px] px-[36px] py-[8px] border-2 transition-all ease-in-out duration-300 border-title-pink bg-title-red rounded-4xl text-white hover:bg-transparent hover:text-title-pink"

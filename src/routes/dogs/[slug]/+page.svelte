@@ -11,7 +11,7 @@
 	<title>{dog.name} | Le Refuge Canin</title>
 </svelte:head>
 
-<header class="w-full h-screen p-6 pt-12">
+<header class="w-full h-screen p-6 pt-12 mx-[16px]">
 	<div
 		class="w-full flex justify-between items-end relative h-full rounded-3xl overflow-hidden p-6"
 	>
