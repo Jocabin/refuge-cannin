@@ -4,7 +4,6 @@
 	import { CUSTOM_COMPONENTS } from '$lib/custom-components.js';
 
 	let { data } = $props();
-	console.log(data);
 
 	const canShowContent = data.content || isPreviewing();
 </script>

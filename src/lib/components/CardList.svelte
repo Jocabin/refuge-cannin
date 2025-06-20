@@ -10,7 +10,8 @@
 		{#each results as result, i}
 			{@const r = result.data}
 
-			<article
+			<a
+				href="/dogs/{r.name}"
 				class="bg-white w-full rounded-lg overflow-hidden flex flex-col max-h-[350px]"
 				class:firstOne={i == 0}
 			>
@@ -27,7 +28,7 @@
 						)} ans)
 					</p>
 				</div>
-			</article>
+			</a>
 		{/each}
 	</section>
 </div>
