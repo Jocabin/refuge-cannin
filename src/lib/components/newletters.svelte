@@ -1,14 +1,13 @@
 <script>
 	import Picture3 from '$lib/assets/picture-3.png';
-	import Button from './Button.svelte';
 </script>
 
-<div class="flex w-screen py-[12px] px-[16px]">
+<div class="flex py-[12px] px-[16px]">
 	<div
 		class="bg-secondary rounded-3xl h-[456px] overflow-hidden mx-auto flex items-end relative w-full"
 	>
 		<!-- SVG de fond -->
-		<svg
+		<!-- <svg
 			class="absolute inset-0 w-full h-full mix-blend-overlay pointer-events-none"
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 1392 453"
@@ -29,10 +28,10 @@
 				<filter id="filter0_n_438_3833" />
 				<radialGradient id="paint0_radial_438_3833" />
 			</defs>
-		</svg>
+		</svg> -->
 
 		<!-- Contenu -->
-		<div class="relative z-10 w-full h-[456px] flex items-center justify-between px-[32px]">
+		<div class="relative z-10 h-[456px] flex items-center justify-between px-[32px]">
 			<div class="w-[30%]">
 				<img class="w-full max-w-[800px]" src={Picture3} alt="Visuel newsletter" />
 			</div>
@@ -50,7 +49,10 @@
 						placeholder="Votre adresse e–mail"
 						class="rounded-full px-4 py-2 w-[600px] border bg-background-1 border-black"
 					/>
-					<Button>Je m’abonne</Button>
+					<button
+						class="font-dm text-[16px] px-[36px] py-[8px] border-2 transition-all ease-in-out duration-300 border-title-pink bg-title-red rounded-4xl text-white hover:bg-transparent hover:text-title-pink"
+						>Je m’abonne</button
+					>
 				</div>
 				<label class="flex items-center gap-2 text-sm underline">
 					<input type="checkbox" />

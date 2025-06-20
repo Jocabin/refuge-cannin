@@ -2,20 +2,23 @@
 	let { text, title, img, color, colorTitle, cards } = $props();
 </script>
 
-<div class="flex flex-col gap-[8px]">
+<div class="w-[100vw] md:w-[60vw] flex flex-col gap-4 md:gap-[8px]">
 	{#each cards as card, i}
 		{@const r = card.data}
 		<div
-			class="w-[350px] md:w-[670px] px-[24px] py-[16px] flex flex-col rounded-2xl"
+			class=" px-4 py-4 flex flex-col rounded-2xl overflow-hidden"
 			style="background-color:{card.color};"
 		>
-			<div class="flex items-end justify-start gap-4">
+			<div class="max-w-full flex items-end justify-start gap-4">
 				<img class="pb-2" src={card.img} alt="" />
-				<h3 class="font-sink text-start text-[25px] uppercase" style="color:{card.colorTitle};">
+				<h3
+					class="font-sink text-start text-[25px] uppercase break-words whitespace-normal"
+					style="color:{card.colorTitle};"
+				>
 					{card.title}
 				</h3>
 			</div>
-			<p>{card.text}</p>
+			<p class="break-words whitespace-normal">{card.text}</p>
 		</div>
 	{/each}
 </div>

@@ -7,6 +7,7 @@
 	import ImagePatch from './ImagePatch.svelte';
 	import image from '$lib/assets/image.jpg';
 	import Button from '$lib/components/button.svelte';
+	import Newletters from './newletters.svelte';
 </script>
 
 <footer class="flex flex-col gap-6">
@@ -67,6 +68,9 @@
 				<input type="checkbox" />
 				J’accepte de recevoir des e–mails de la part du refuge
 			</label>
+		</div>
+	</section> -->
+			<Newletters />
 		</div>
 	</section>
 
