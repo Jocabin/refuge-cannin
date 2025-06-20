@@ -43,7 +43,7 @@
 	<section
 		class="flex flex-row justify-center items-center gap-6 w-full p-8 py-20 bg-secondary rounded-3xl"
 	>
-		<div class="w-[400px]">
+		<!-- <div class="w-[400px]">
 			<ImagePatch img={image} imgAlt="" />
 		</div>
 
@@ -69,7 +69,7 @@
 				<input type="checkbox" />
 				J’accepte de recevoir des e–mails de la part du refuge
 			</label>
-		</div>
+		</div> -->
 		<div>
 			<Newletters />
 		</div>
