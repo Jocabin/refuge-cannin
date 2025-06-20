@@ -20,6 +20,7 @@ import FiveCardsColorTitle from "./components/FiveCardsColorTitle.svelte";
 import ThreeCardsColorTitle from "./components/ThreeCardsColorTitle.svelte";
 import ThreeDogsGrid from "./components/ThreeDogsGrid.svelte";
 import LayoutDog from "./components/LayoutDog.svelte";
+import HeaderHeroDog from "./components/HeaderHeroDog.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -632,6 +633,33 @@ export const CUSTOM_COMPONENTS = [
                         },
                         {
                                 name: 'childrenCompatibility',
+                                type: 'string'
+                        },
+                        {
+                                name: 'ctaColor',
+                                type: 'color'
+                        },
+                        {
+                                name: 'ctaText',
+                                type: 'string'
+                        },
+                        {
+                                name: 'ctaLink',
+                                type: 'string'
+                        },
+
+                ]
+        },
+        {
+                component: HeaderHeroDog,
+                name: 'Header hero chien',
+                inputs: [
+                        {
+                                name: 'img',
+                                type: 'file'
+                        },
+                        {
+                                name: 'title',
                                 type: 'string'
                         },
                         {

@@ -6,7 +6,7 @@
 
 <div class="p-5">
 	<div
-		class="rounded-3xl w-full py-4 px-4 md:p-10 flex flex-col justify-end items-stretch h-[800px]"
+		class="rounded-3xl w-full py-4 px-4 md:p-10 flex flex-col justify-end items-stretch h-[90vh]"
 		style="background-color: {color};"
 	>
 		<!-- <NoiseFilter /> -->

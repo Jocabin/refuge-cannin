@@ -12,8 +12,9 @@
 
 <footer class="flex flex-col gap-6">
 	<section class="flex flex-col justify-center items-center gap-6 p-20">
-		<h2 class=" font-sink text-[58px] text-center">Venez flairer notre histoire de plus près.</h2>
-
+		<h2 class=" font-sink text-[40px] md:text-[58px] text-center uppercase leading-[90%]">
+			Suivez <br /> notre aventure
+		</h2>
 		<ul class="flex flex-row gap-6">
 			<li class="relative w-[76px] h-[76px] flex items-center justify-center">
 				<IconBackForm />
