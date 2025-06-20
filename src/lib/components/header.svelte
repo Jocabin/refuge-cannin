@@ -67,7 +67,9 @@
 						class=" flex flex-col bg-background-1 w-[300px] divide-y divide-[rgba(1,3,68,0.05)] gap-[16px] px-4 py-4 rounded-2xl"
 					>
 						<li class="group/adopt pb-4 flex justify-between items-center">
-							<a class="font-dm text-[16px] font-bold" href="/">Nos chiens à l’adoption</a>
+							<a class="font-dm text-[16px] font-bold" href="/nos-chiens-a-ladoption"
+								>Nos chiens à l’adoption</a
+							>
 							<ArrowRight
 								class="flex justify-end items-end opacity-0 group-hover/adopt:opacity-100 transition-opacity duration-300 w-4 h-4"
 							/>
@@ -103,13 +105,16 @@
 							/>
 						</li>
 						<li class="group/soutenir pb-4 flex justify-between items-center">
-							<a class="font-dm text-[16px] font-bold" href="/">Devenir adhérent</a>
+							<a class="font-dm text-[16px] font-bold" href="/devenir-bnenevole">Devenir adhérent</a
+							>
 							<ArrowRight
 								class="opacity-0 group-hover/soutenir:opacity-100 transition-opacity duration-300 w-4 h-4"
 							/>
 						</li>
 						<li class="group/soutenir pb-4 flex justify-between items-center">
-							<a class="font-dm text-[16px] font-bold" href="/">Devenir partenaire</a>
+							<a class="font-dm text-[16px] font-bold" href="/devenir-partenaire"
+								>Devenir partenaire</a
+							>
 							<ArrowRight
 								class="opacity-0 group-hover/soutenir:opacity-100 transition-opacity duration-300 w-4 h-4"
 							/>
@@ -121,7 +126,7 @@
 							/>
 						</li>
 						<li class="group/soutenir pb-4 flex justify-between items-center">
-							<a class="font-dm text-[16px] font-bold" href="/">Faire un don</a>
+							<a class="font-dm text-[16px] font-bold" href="/don">Faire un don</a>
 							<ArrowRight
 								class="opacity-0 group-hover/soutenir:opacity-100 transition-opacity duration-300 w-4 h-4"
 							/>

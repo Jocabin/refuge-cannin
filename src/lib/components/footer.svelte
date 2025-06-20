@@ -40,10 +40,11 @@
 		</ul>
 	</section>
 
-	<section
-		class="flex flex-row justify-center items-center gap-6 w-full p-8 py-20 bg-secondary rounded-3xl"
-	>
-		<!-- <div class="w-[400px]">
+	<div class="flex mx-[16px]">
+		<section
+			class="w-[400px] flex flex-row justify-center items-center gap-6 md:w-full p-8 py-20 mx-[16px] bg-secondary rounded-3xl"
+		>
+			<!-- <div class="w-[400px]">
 			<ImagePatch img={image} imgAlt="" />
 		</div>
 
@@ -70,10 +71,11 @@
 				J’accepte de recevoir des e–mails de la part du refuge
 			</label>
 		</div> -->
-		<div>
-			<Newletters />
-		</div>
-	</section>
+			<div>
+				<Newletters />
+			</div>
+		</section>
+	</div>
 
 	<section class="bg-accents flex flex-row justify-between items-center overflow-hidden rounded-t-">
 		<div class="flex flex-col justify-between items-start">

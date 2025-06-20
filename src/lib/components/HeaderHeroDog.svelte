@@ -2,7 +2,7 @@
 	let { title, ctaColor, ctaLink, ctaText, img } = $props();
 </script>
 
-<div class="p-5">
+<div class="p-5 mx-[16px]">
 	<div
 		class="rounded-3xl w-full py-4 px-4 md:p-10 flex flex-col justify-end items-stretch h-[90vh]"
 		style="background-image: url({img}); background-size: cover; background-repeat: no-repeat; background-position: top center;"
