@@ -19,6 +19,7 @@ import BlocTextCta from "./components/BlocTextCta.svelte";
 import FiveCardsColorTitle from "./components/FiveCardsColorTitle.svelte";
 import ThreeCardsColorTitle from "./components/ThreeCardsColorTitle.svelte";
 import ThreeDogsGrid from "./components/ThreeDogsGrid.svelte";
+import LayoutDog from "./components/LayoutDog.svelte";
 
 export const CUSTOM_COMPONENTS = [
         {
@@ -603,6 +604,49 @@ export const CUSTOM_COMPONENTS = [
                                         },
                                 ]
                         }
+                ]
+        },
+        {
+                component: LayoutDog,
+                name: 'fiche chien avec une image et les informations',
+                inputs: [
+                        {
+                                name: 'img',
+                                type: 'file'
+                        },
+                        {
+                                name: 'years',
+                                type: 'string'
+                        },
+                        {
+                                name: 'height',
+                                type: 'string'
+                        },
+                        {
+                                name: 'sexe',
+                                type: 'string'
+                        },
+                        {
+                                name: 'energyLevel',
+                                type: 'string'
+                        },
+                        {
+                                name: 'childrenCompatibility',
+                                type: 'string'
+                        },
+                        {
+                                name: 'ctaColor',
+                                type: 'color'
+                        },
+                        {
+                                name: 'ctaText',
+                                type: 'string'
+                        },
+                        {
+                                name: 'ctaLink',
+                                type: 'string'
+                        },
+
                 ]
         },
 ]
