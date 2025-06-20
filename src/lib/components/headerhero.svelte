@@ -1,15 +1,13 @@
 <script>
-	import NoiseFilter from './NoiseFilter.svelte';
-
 	let { title, text, img, color, children } = $props();
 </script>
 
 <div class="p-5">
 	<div
-		class="rounded-3xl w-full md:p-10 flex flex-col justify-end items-start h-screen"
+		class="rounded-3xl w-full md:p-10 flex flex-col justify-end items-start min-h-screen"
 		style="background-color: {color};"
 	>
-		<div class="flex flex-row justify-between w-full">
+		<div class="flex flex-row justify-between w-full md:pt-32">
 			<div class="flex flex-col gap-3 w-full">
 				<h3
 					class="max-w-[830px] font-sink text-title-pink text-[69px] leading-[80px] md:text-[120px] md:leading-[90%] uppercase"
@@ -20,7 +18,7 @@
 			</div>
 
 			<div>
-				<img src={img} class="object-cover" width="400" alt="" />
+				<img src={img} class="object-cover" width="600" alt="" />
 			</div>
 		</div>
 

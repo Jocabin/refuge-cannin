@@ -4,9 +4,10 @@
 	import ModaleBurger from './modaleBurger.svelte';
 	import CaretDown from 'phosphor-icons-svelte/IconCaretDownRegular.svelte';
 	import ArrowRight from 'phosphor-icons-svelte/IconArrowRightRegular.svelte';
+	import { fade } from 'svelte/transition';
 </script>
 
-<header class="flex flex-col mb-0 pb-0 top-3 sticky -mt-34 z-100">
+<header in:fade out:fade class="flex flex-col mb-0 pb-0 top-3 sticky -mt-34 z-100">
 	<div
 		class="flex items-center gap-4 justify-between px-10 bg-transaprent mt-[20px] z-100 md:flex-row md:items-center md:justify-center"
 	>

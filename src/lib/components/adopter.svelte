@@ -7,7 +7,7 @@
 
 <div class="w-full py-[12px] px-[16px] flex">
 	<div
-		class="divrounded-3xl h-[600px] overflow-hidden w-full flex items-center rounded-2xl justify-between relative"
+		class="divrounded-3xl overflow-hidden w-full flex items-center rounded-2xl justify-between relative md:py-20"
 		style="background-color:{color}"
 	>
 		<div
@@ -47,7 +47,7 @@
 				</div>
 			</div>
 			<div>
-				<img class="" src={img} width="380" alt="" />
+				<img class="" src={img} width="500" alt="" />
 			</div>
 		</div>
 	</div>
